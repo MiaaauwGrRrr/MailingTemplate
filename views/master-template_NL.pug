@@ -35,9 +35,9 @@ doctype transitional
 
           include includes/Essential/NL/rating_NL.pug 
           include includes/Essential/NL/footer_NL.pug
-          +footer_NL({
-            preview: "Ontdek onze cadeautips en vind het perfecte geschenk voor Vaderdag."
-          })
+          +footer_NL(
+             [ " multiple lines", "of legals are", "now one 100% possible" ]
+          )
 
           table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper")
             tr
