@@ -5,7 +5,7 @@ doctype transitional
     meta(name="format-detection", content="telephone=no")
     meta(name="viewport", content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;")
     meta(http-equiv="X-UA-Compatible", content="IE=9; IE=8; IE=7; IE=EDGE")
-    title Master template
+    title ColliShop Email
     style
       include style.css
 
@@ -29,71 +29,42 @@ doctype transitional
           //- 
           //- 
 
-          include includes/Special/afhaalpunt.pug 
-          include includes/Special/bestellen-pros.pug
-          include includes/Special/gratis-leveren.pug
-          include includes/Special/korting-verzilveren.pug
-          include includes/Special/promocode.pug
-          include includes/Special/voordelen.pug
-
-
-          include includes/Essential/footer.pug
+          //? MOBILETOP Slaat op de afbeeling mensjes
+          include includes/Essential/preheader.pug
           include includes/Essential/logo.pug
           include includes/Essential/navigatie.pug
-          include includes/Essential/preheader.pug
-          include includes/Essential/rating.pug 
+
+          
+          
+          
+          
 
           // Headers
           include includes/Headers/header--full-width-height.pug
-          include includes/Headers/header--full-width.pug
-          include includes/Headers/header.pug
 
           // Unordered
-          include includes/Basic/promo-2prod.pug
-          include includes/Basic/intro.pug
-          include includes/Basic/promo-2cat.pug
-          include includes/Basic/promo-4cat.pug
-          include includes/Basic/promo-4prod.pug
+          
+          //-include includes/Basic/promo-2cat.pug
+          
+          
 
-          //? Dit is weekdeal shizzel
-          include includes/Promo/promo-Prod_Red-IL.pug
-          include includes/Promo/promo-Prod_Red-IR.pug
-          include includes/Promo/promo-Prod_White-IL.pug
-          include includes/Promo/promo-Prod_White-IR.pug
 
 
 
           //- PROMO
 
-          include includes/Promo/promo-A-IL-TextR_MobileBottom.pug
-          include includes/Promo/promo-B-IL_TextR_MobileTop.pug
-          include includes/Promo/promo-C-IR_TextL_MobileBottom.pug
-          include includes/Promo/promo-D-IR_TextL_MobileTop.pug
-          
+          //-include includes/Promo/promo-A-IL-TextR_MobileBottom.pug
+          //-include includes/Promo/promo-C-IR_TextL_MobileBottom.pug
+          include Mixin/content.pug
+          //-include includes/Basic/promo-4prod.pug
 
-          include includes/Promo/promo-E-IL_TitleR_MobileBottom.pug
-          include includes/Promo/promo-F-IL_TitleR_MobileTop.pug
-          include includes/Promo/promo-G-IR_TitleL_MobileBottom.pug
-          include includes/Promo/promo-H-IR_TitleL_MobileTop.pug
+          //-include includes/Promo/promo-A-IL-TextR_MobileBottom.pug
+          //-include includes/Promo/promo-C-IR_TextL_MobileBottom.pug
         
           //- INSPO
-          include includes/Inspo/inspo-A-IL_TitleR_MobileBottom.pug
-          include includes/Inspo/inspo-B-IL_TitleR_MobileTop.pug
-          include includes/Inspo/inspo-C-IR_TitleL_MobileBottom.pug
-          include includes/Inspo/inspo-D-IR_TitleL_MobileTop.pug
-          
-
-
-          include includes/Inspo/inspo-E-IL_TextR_Border_MobileBottom.pug
-          include includes/Inspo/inspo-F-IL_TextR_Border_MobileTop.pug
-          include includes/Inspo/inspo-G-IR_TextL_Border_MobileBottom.pug
-          include includes/Inspo/inspo-H-IR_TextL_Border_MobileTop.pug
-          
-
-          include includes/Inspo/inspo-I-IL_TextR_MobileBottom.pug
-          include includes/Inspo/inspo-J-IL_TextR_MobileTop.pug
-          include includes/Inspo/inspo-K-IR_TextL_MobileBottom.pug
-          include includes/Inspo/inspo-L-IR_TextL_MobileTop.pug
+          //-include includes/Inspo/inspo-H-IR_TextL_Border_MobileTop.pug
+          include includes/Essential/rating.pug 
+          include includes/Essential/footer.pug
           
           
           

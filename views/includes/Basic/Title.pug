@@ -1,0 +1,10 @@
+mixin Title(data)     
+  table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
+    tr
+        td(align="center" valign="top" class="td-padding-outer")
+            table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#FFFFFF")
+                tr
+                    td(align="left" valign="top" class="td-padding-inner" style="padding:5px 0 25px 0;")
+                        table(width="100%" border="0" cellspacing="0" cellpadding="0")
+                            tr
+                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:30px; color:#000000; font-weight:bold; padding-bottom:10px;")=data.title

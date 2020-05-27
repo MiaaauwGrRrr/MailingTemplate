@@ -1,5 +1,6 @@
-<!-- NU POPULAIR -->
-table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
+mixin promo-4cat(data)    
+    <!-- NU POPULAIR -->
+    table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
     tr
         td(align="center" valign="top" class="td-padding-outer")
             table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#FFFFFF")
@@ -7,7 +8,7 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                     td(align="left" valign="top" class="td-padding-inner" style="padding:0px 0px 55px 0px;")
                         table(width="100%" border="0" cellspacing="0" cellpadding="0")
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:30px; color:#000000; font-weight:bold; padding-bottom:10px;") Nu populair
+                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:30px; color:#000000; font-weight:bold; padding-bottom:10px;")=data.mainTitle
                         table(width="100%" border="0" cellspacing="0" cellpadding="0")
                             tr
                                 td(align="left" valign="top")
@@ -17,38 +18,38 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                                                 table(width="140" border="0" cellspacing="0" cellpadding="0" class="w-98")
                                                     tr
                                                         td(align="center" valign="top" style="border: 2px solid #F3F3F3;")
-                                                            a(href="#LINK")
-                                                                img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/product-image3.jpg" width="133" height="123" alt="#ALT" border="0" class="img-full" style="display:block;" )
+                                                            a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                                                img(src=`img/${data.img}.jpg` alt=`${data.img}` width="133" height="123" border="0" class="img-full" style="display:block;" )
                                                     tr
                                                         td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:20px; font-weight:bold; color:#0098DA; padding:5px 0 20px 0;")
-                                                            a(href="#LINK" style="color:#0098DA; text-decoration:none;") Poefs en zitzakken  
+                                                            a(href=`${data.link4}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.title
                                             td(align="left" valign="top" class="td-right")
                                                 table(width="140" border="0" cellspacing="0" cellpadding="0" class="w-98" style="display: inline-block;")
                                                     tr
                                                         td(align="center" valign="top" style="border: 2px solid #F3F3F3;")
-                                                            a(href="#LINK")
-                                                                img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/product-image3.jpg" width="133" height="123" alt="#ALT" border="0" class="img-full" style="display:block;")
+                                                            a(href=`${data.link2}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                                                img(src=`img/${data.img}.jpg` alt=`${data.img}` width="133" height="123" border="0" class="img-full" style="display:block;")
                                                     tr
                                                         td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:20px; font-weight:bold; color:#0098DA; padding:5px 0 20px 0;")
-                                                            a(href="#LINK" style="color:#0098DA; text-decoration:none;") Poefs en zitzakken
+                                                            a(href=`${data.link4}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.title2
                                     table(align="left" width="300" border="0" cellspacing="0" cellpadding="0" class="table-full")
                                         tr
                                             td(align="left" valign="top")
                                                 table(width="140" border="0" cellspacing="0" cellpadding="0" class="w-98")
                                                     tr
                                                         td(align="center" valign="top" style="border: 2px solid #F3F3F3;")
-                                                            a(href="#LINK")
-                                                                img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/product-image3.jpg" width="133" height="123" alt="#ALT" border="0" class="img-full" style="display:block;")
+                                                            a(href=`${data.link3}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                                                img(src=`img/${data.img}.jpg` alt=`${data.img}` width="133" height="123" border="0" class="img-full" style="display:block;")
                                                     tr
                                                         td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:20px; font-weight:bold; color:#0098DA; padding:5px 0 0px 0;")
-                                                            a(href="#LINK" style="color:#0098DA; text-decoration:none;") Poefs en zitzakken
+                                                            a(href=`${data.link4}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.title3
                                             td(align="left" valign="top" class="td-right")
                                                 table(width="140" border="0" cellspacing="0" cellpadding="0" class="w-98" style="display: inline-block;")
                                                     tr
                                                         td(align="center" valign="top" style="border: 2px solid #F3F3F3;")
-                                                            a(href="#LINK")
-                                                                img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/product-image3.jpg" width="133" height="123" alt="#ALT" border="0" class="img-full" style="display:block;")
+                                                            a(href=`${data.link4}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                                                img(src=`img/${data.img}.jpg` alt=`${data.img}` width="133" height="123" border="0" class="img-full" style="display:block;")
                                                     tr
                                                         td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:20px; font-weight:bold; color:#0098DA; padding:5px 0 0px 0;")
-                                                            a(href="#LINK" style="color:#0098DA; text-decoration:none;") Poefs en zitzakken
-<!-- NU POPULAIR -->
+                                                            a(href=`${data.link4}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.title4
+    <!-- NU POPULAIR -->

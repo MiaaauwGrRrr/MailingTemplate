@@ -1,5 +1,6 @@
-<!-- PRODUCTEN IN DE KIJKER -->
-table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
+mixin promo-2prod(data)
+    <!-- PRODUCTEN IN DE KIJKER -->
+    table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
     tr
         td(align="center" valign="top" class="td-padding-outer")
             table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#FFFFFF")
@@ -23,11 +24,11 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                                                                         table(border="0" cellspacing="0" cellpadding="0")
                                                                             tr
                                                                                 td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:12px; line-height:20px; font-weight:bold; color:#FFFFFF; padding:2px 6px 2px 6px; background-color: #1FC05C")
-                                                                                    a(href="#LINK" style="color:#FFFFFF; text-decoration:none; text-transform: uppercase;") Cashback
+                                                                                    a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; text-transform: uppercase;") Cashback
                                                                 tr
                                                                     td(align="center" valign="top" style="padding-bottom:10px;")
-                                                                        a(href="#LINK")
-                                                                            img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/product-image4.jpg" width="230" height="160" alt="#ALT" border="0" class="img-full" style="display:block;")
+                                                                        a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                                                            img(src=`img/${data.img}.jpg` alt=`${data.img}` width="230" height="160" alt="#ALT" border="0" class="img-full" style="display:block;")
                                                             table(width="100%" border="0" cellspacing="0" cellpadding="0" align="right" valign="middle" class="w-66 h-100")
                                                                 tr
                                                                     td(align="center" valign="middle")
@@ -39,32 +40,34 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                                                                                     table(align="left" border="0" cellspacing="0" cellpadding="0")
                                                                                         tr
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-yellow.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-yellow.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-yellow.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-yellow.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-grey.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/grey-star.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                             tr
                                                                                 td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:16px; line-height:20px; font-weight:bold; color:#0098DA; padding:0px 25px 20px 25px;" class="pl-0")
-                                                                                    a(href="#LINK" style="color:#0098DA; text-decoration:none;") Nova Friteuse Aerofryer XL zwart
+                                                                                    a(href="#LINK" style="color:#0098DA; text-decoration:none;")=data.title
                                                                             tr
                                                                                 td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA; padding:0px 25px 20px 25px;" class="pl-0")
                                                                                     table(border="0" cellspacing="0" cellpadding="0" width="100%")
                                                                                         tr
                                                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA;")
-                                                                                                a(href="#LINK" style="color:#000000; text-decoration:none;") €119
+                                                                                                a(href="#LINK" style="color:#000000; text-decoration:none;")=data.price
+                                                                                                    span(style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #999898; text-decoration: line-through; padding-left: 7px; text-decoration: line-through;")=data.oldPrice
+                                                                                                    span(style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #D20000; text-decoration: line-through;  text-decoration: none;")=data.percentage
                                                                                             td(align="right" valign="bottom" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA;")
                                                                                                 a(href="#LINK" style="color:#000000; text-decoration:none;")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/arrow-icon-blue.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 22px;")
+                                                                                                    img(src="https://www.collishop.be/ecomwcs/static/StaticWeb/CS/mailbanners/images/arrow.png" alt="Pijl" style="display:block; border:none; outline:none; text-decoration:none; width: 22px;")
                                     table(align="right" width="48%" border="0" cellspacing="0" cellpadding="0" class="table-full")
                                         tr
                                             td(align="center" valign="top" class="pb-15")
@@ -77,11 +80,11 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                                                                         table(border="0" cellspacing="0" cellpadding="0")
                                                                             tr
                                                                                 td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:12px; line-height:20px; font-weight:bold; color:#FFFFFF; padding:2px 6px 2px 6px; background-color: #FC8100")
-                                                                                    a(href="#LINK" style="color:#FFFFFF; text-decoration:none; text-transform: uppercase;") Nieuw
+                                                                                    a(href=`${data.link2}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; text-transform: uppercase;") Nieuw
                                                                 tr
                                                                     td(align="center" valign="top" style="padding-bottom:10px;")
-                                                                        a(href="#LINK")
-                                                                            img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/product-image.jpg" width="230" height="160" alt="#ALT" border="0" class="img-full" style="display:block;")
+                                                                        a(href=`${data.link2}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                                                            img(src=`img/${data.img}.jpg` alt=`${data.img}` width="230" height="160" alt="#ALT" border="0" class="img-full" style="display:block;")
                                                             table(width="100%" border="0" cellspacing="0" cellpadding="0" align="right" valign="middle" class="w-66 h-100")
                                                                 tr
                                                                     td(align="center" valign="middle")
@@ -93,32 +96,32 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                                                                                     table(align="left" border="0" cellspacing="0" cellpadding="0")
                                                                                         tr
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-yellow.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/star.png" alt="star" target="_blank" xt="SPCLICKSTREAM" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-yellow.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/star.png" alt="star" target="_blank" xt="SPCLICKSTREAM" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-yellow.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/star.png" alt="star" target="_blank" xt="SPCLICKSTREAM" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-yellow.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/star.png" alt="star" target="_blank" xt="SPCLICKSTREAM" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                                             td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                                a(href="#LINK")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/star-grey.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                                a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                                    img(src="img/vast/grey-star.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                             tr
                                                                                 td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:16px; line-height:20px; font-weight:bold; color:#0098DA; padding:0px 25px 20px 25px;" class="pl-0")
-                                                                                    a(href="#LINK" style="color:#0098DA; text-decoration:none;") Nova Friteuse Aerofryer XL zwart
+                                                                                    a(href="#LINK" style="color:#0098DA; text-decoration:none;")=data.title2
                                                                             tr
                                                                                 td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA; padding:0px 25px 20px 25px;" class="pl-0")
                                                                                     table(border="0" cellspacing="0" cellpadding="0" width="100%")
                                                                                         tr
                                                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA;")
-                                                                                                a(href="#LINK" style="color:#000000; text-decoration:none;") €119
-                                                                                                    span(style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #999898; text-decoration: line-through; padding-left: 7px; text-decoration: line-through;") €129
-                                                                                                    span(style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #D20000; text-decoration: line-through;  text-decoration: none;") -34%
+                                                                                                a(href="#LINK" style="color:#000000; text-decoration:none;")=data.price2
+                                                                                                    span(style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #999898; text-decoration: line-through; padding-left: 7px; text-decoration: line-through;")=data.oldPrice2
+                                                                                                    span(style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #D20000; text-decoration: line-through;  text-decoration: none;")=data.percentage2
                                                                                             td(align="right" valign="bottom" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA;")
                                                                                                 a(href="#LINK" style="color:#000000; text-decoration:none;")
-                                                                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/arrow-icon-blue.png" alt="#ALT" style="display:block; border:none; outline:none; text-decoration:none; width: 22px;")
-<!-- PRODUCTEN IN DE KIJKER -->
+                                                                                                    img(src="https://www.collishop.be/ecomwcs/static/StaticWeb/CS/mailbanners/images/arrow.png" alt="Pijl" style="display:block; border:none; outline:none; text-decoration:none; width: 22px;")
+    <!-- PRODUCTEN IN DE KIJKER -->

@@ -1,5 +1,6 @@
-<!-- HEADER FULL WIDTH -->
-table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#0098DA")
+mixin header--full-width(data)    
+    <!-- HEADER FULL WIDTH -->
+    table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#0098DA")
     tr
         td(align="center" valign="top" class="td-padding-outer" style="padding:0 0 0 0;")
             table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#0098DA")
@@ -14,13 +15,13 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                                                 table(width="100%" align="center" valign="middle" border="0" cellspacing="0" cellpadding="0" style="vertical-align: middle;")
                                                     tr
                                                         th(align="center" valign="top")
-                                                            a(href="#LINK" style="font-size: 0; line-height: 0; padding: 0;")
-                                                                img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/header-image-full-width.jpg" width="550" height="515" alt="#ALT" border="0" class="img-full" style="display: block;")
+                                                            a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="font-size: 0; line-height: 0; padding: 0;")
+                                                                img(src=`img/${data.img}.jpg` alt=`${data.img}` width="550" height="515" border="0" class="img-full" style="display: block;")
                         table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#0098DA")
                             tr
                                 td(align="center" valign="top")
                                     table(border="0" cellspacing="0" cellpadding="0")
                                         tr
                                             td(align="center" valign="top" bgcolor="#E92972" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px; border-radius: 25px;")
-                                                a(href="#LINK" style="color:#FFFFFF; text-decoration:none; display:inline-block;") Bekijk het assortiment
-<!-- HEADER FULL WIDTH -->
+                                                a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")=data.cta
+    <!-- HEADER FULL WIDTH -->
