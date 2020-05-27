@@ -2,8 +2,13 @@ var gulp = require('gulp');
     inlineCss = require('gulp-inline-css');
     pug = require('gulp-pug');
     htmlbeautify = require('gulp-html-beautify');
-    browserSync = require('browser-sync').create();
+    browserSyncNL = require('browser-sync').create('nl');
+    browserSyncFR = require('browser-sync').create('fr');
     cache = require('gulp-cache');
+    htmlmin = require('gulp-htmlmin');
+    clean = require('gulp-clean');
+    replace = require('gulp-replace');
+
 
 
 // Default task (links from the package.json)
@@ -16,38 +21,65 @@ function defaultTask(cb) {
 exports.default = defaultTask
 // This will build the email
   // TODO : ADD minifier and a stripper if needed
-    
+
+  gulp.task('clean', function () {
+    return gulp.src('build/*html', {read: false})
+        .pipe(clean());
+});
+
 gulp.task('build-nl', function buildHTML() {
-    return gulp.src('views/*-nl.pug')
+    return gulp.src('views/master-template_NL.pug')
         .pipe(pug())
         //.pipe(inlineCss())
-        //.pipe(htmlbeautify())
+        .pipe(htmlbeautify())
+        .pipe(replace('amp;', ''))
+        .pipe(htmlmin())
         .pipe(gulp.dest('build/'));
 });
 
     
 gulp.task('build-fr', function buildHTML() {
-  return gulp.src('views/*-fr.pug')
+  return gulp.src('views/master-template_FR.pug')
       .pipe(pug())
       //.pipe(inlineCss())
-      //.pipe(htmlbeautify())
+      .pipe(htmlbeautify())
+      .pipe(replace('amp;', ''))
+      .pipe(htmlmin())
       .pipe(gulp.dest('build/'));
 });
+
+
+
 // Creates a local version of the master-template -> 
   // TODO  Create another one for FR version AND change the name of the master-template to something more logical
 gulp.task('browser-sync', function(done) {
-  browserSync.init({
+  browserSyncNL.init({
     //files: ["./views/master-template.pug", "views/style.css", "views/includes/*.pug"],
     port: 3000,
     server: {
       baseDir: "./build",
-      index: "master-template.html",
+      index: "master-template_NL.html",
       watch: true
     },
     ghostMode: true
   });
+
+  browserSyncFR.init({
+    port: 3004,
+    ui: {
+        port: 3004
+    },
+    server: {
+        baseDir: "./build",
+        index: "master-template_FR.html",
+        watch: true
+    },
+    ghostMode: false
+});
+
   done();
 });
+
 // Clears cache on every build and every watch event (refresh of local site)
 gulp.task('clearCache', function(done) {
     cache.clearAll();
@@ -55,11 +87,12 @@ gulp.task('clearCache', function(done) {
   });
 
 gulp.task('watch', function() {
-  gulp.watch("views/master-template.pug").on("all", gulp.series("build","clearCache", gulp.parallel(browserSync.reload)));
-  gulp.watch("views/style.css").on("all", gulp.series("build","clearCache", gulp.parallel(browserSync.reload)));
-  gulp.watch("views/includes/*.*").on("all", gulp.series("build","clearCache", gulp.parallel(browserSync.reload)));
-  gulp.watch("views/includes/*/*.*").on("all", gulp.series("build","clearCache", gulp.parallel(browserSync.reload)));
+  gulp.watch("views/master-template*.pug").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
+  gulp.watch("views/style.css").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
+  gulp.watch("views/includes/*.*").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
+  gulp.watch("views/includes/*/*.*").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
+  gulp.watch("views/includes/*/*/*.*").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
 });
 
 
-gulp.task("alle", gulp.series("build","browser-sync","clearCache", "watch" ));
+gulp.task("alle", gulp.series("clean", "build-nl","build-fr", "browser-sync", "clearCache", "watch" ));
