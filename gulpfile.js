@@ -5,7 +5,7 @@ var gulp = require('gulp');
     browserSyncNL = require('browser-sync').create('nl');
     browserSyncFR = require('browser-sync').create('fr');
     cache = require('gulp-cache');
-    htmlmin = require('gulp-htmlmin');
+    minify = require('gulp-minifier');
     clean = require('gulp-clean');
     replace = require('gulp-replace');
 
@@ -27,13 +27,15 @@ exports.default = defaultTask
         .pipe(clean());
 });
 
+
+
 gulp.task('build-nl', function buildHTML() {
     return gulp.src('views/master-template_NL.pug')
         .pipe(pug())
         //.pipe(inlineCss())
         .pipe(htmlbeautify())
         .pipe(replace('amp;', ''))
-        .pipe(htmlmin())
+        //.pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('build/'));
 });
 
@@ -44,10 +46,29 @@ gulp.task('build-fr', function buildHTML() {
       //.pipe(inlineCss())
       .pipe(htmlbeautify())
       .pipe(replace('amp;', ''))
-      .pipe(htmlmin())
+      //.pipe(htmlmin({ collapseWhitespace: true }))
+      
       .pipe(gulp.dest('build/'));
 });
 
+
+gulp.task('minifier', function() {
+  return gulp.src('build/*.html').pipe(minify({
+    minify: true,
+    minifyHTML: {
+      collapseWhitespace: true,
+      conservativeCollapse: true,
+    },
+    minifyJS: {
+      sourceMap: true
+    },
+    minifyCSS: true,
+    getKeptComment: function (content, filePath) {
+        var m = content.match(/\/\*![\s\S]*?\*\//img);
+        return m && m.join('\n') + '\n' || '';
+    }
+  })).pipe(gulp.dest('dest'));
+});
 
 
 // Creates a local version of the master-template -> 
@@ -95,4 +116,4 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task("alle", gulp.series("clean", "build-nl","build-fr", "browser-sync", "clearCache", "watch" ));
+gulp.task("alle", gulp.series("clean", "build-nl","build-fr", "minifier", "browser-sync", "clearCache", "watch" ));

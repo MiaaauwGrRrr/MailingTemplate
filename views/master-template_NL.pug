@@ -3,7 +3,7 @@ doctype transitional
   head
     meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
     meta(name="format-detection", content="telephone=no")
-    meta(name="viewport", content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="IE=9; IE=8; IE=7; IE=EDGE")
     title ColliShop Email
     style
@@ -25,6 +25,9 @@ doctype transitional
 
           //? MOBILETOP Slaat op de afbeeling mensjes
           include includes/Essential/NL/preheader_NL.pug
+          +preheader_NL({
+            preview: "Ontdek onze cadeautips en vind het perfecte geschenk voor Vaderdag."
+          })
           include includes/Essential/NL/logo_NL.pug
           include includes/Essential/NL/navigatie_NL.pug
 
@@ -32,6 +35,9 @@ doctype transitional
 
           include includes/Essential/NL/rating_NL.pug 
           include includes/Essential/NL/footer_NL.pug
+          +footer_NL({
+            preview: "Ontdek onze cadeautips en vind het perfecte geschenk voor Vaderdag."
+          })
 
           table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper")
             tr
