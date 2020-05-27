@@ -17,12 +17,21 @@ exports.default = defaultTask
 // This will build the email
   // TODO : ADD minifier and a stripper if needed
     
-gulp.task('build', function buildHTML() {
-    return gulp.src('views/*.pug')
+gulp.task('build-nl', function buildHTML() {
+    return gulp.src('views/*-nl.pug')
         .pipe(pug())
         //.pipe(inlineCss())
-        .pipe(htmlbeautify())
+        //.pipe(htmlbeautify())
         .pipe(gulp.dest('build/'));
+});
+
+    
+gulp.task('build-fr', function buildHTML() {
+  return gulp.src('views/*-fr.pug')
+      .pipe(pug())
+      //.pipe(inlineCss())
+      //.pipe(htmlbeautify())
+      .pipe(gulp.dest('build/'));
 });
 // Creates a local version of the master-template -> 
   // TODO  Create another one for FR version AND change the name of the master-template to something more logical
