@@ -113,6 +113,8 @@ gulp.task('watch', function() {
   gulp.watch("views/includes/*.*").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
   gulp.watch("views/includes/*/*.*").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
   gulp.watch("views/includes/*/*/*.*").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
+
+  gulp.watch("views/includes/views/Mixin/*.pug").on("all", gulp.series("build-nl","build-fr","clearCache", gulp.parallel(browserSyncNL.reload), gulp.parallel(browserSyncNL.reload)));
 });
 
 
