@@ -4,7 +4,8 @@
   "description": "collishop template",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "build": "gulp alle",
+    "zip": "gulp zip"
   },
   "keywords": [
     "collishop",
@@ -27,6 +28,7 @@
   "dependencies": {
     "git": "^0.1.5",
     "gulp-html-beautify": "^1.0.1",
-    "gulp-pug": "^4.0.1"
+    "gulp-pug": "^4.0.1",
+    "gulp-zip": "^5.0.1"
   }
 }

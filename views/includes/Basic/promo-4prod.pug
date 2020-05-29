@@ -26,37 +26,21 @@ mixin promo-4prod(data)
                                                         tr
                                                             td(align="center" valign="top" style="padding:5px 25px 7px 0;" height="15px")
                                                                 table(align="left" border="0" cellspacing="0" cellpadding="0")
-                                                                    tr
-                                                                        - var stars= data.sterren
-                                                                            - for (i = 0.5; i <= stars; stars--) 
+                                                                    - var stars= data.sterren;
+                                                                    if(stars > 0)
+                                                                        tr
+                                                                            -for(var i = 0; i < Math.floor(stars); i++)
                                                                                 td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                    a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                if stars === 1.5
-                                                                                    -  stars = 0
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
+                                                                                    a(href=`${data.link1}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                            -if(stars > Math.floor(stars))
+                                                                                td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                         a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
                                                                                         img(src="img/vast/half-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                        -var greyStars= 5-data.sterren
-                                                                            case greyStars
-                                                                                when 2.5
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                            img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                            img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                when 1.5
-                                                                                  td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                when 1
-                                                                                  td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                default
-                                                                                    span
-                                                                            
+                                                                            -for(var i = 0; i < 5 - Math.ceil(stars); i++)
+                                                                                td(width="15" align="left" valign="top" style="padding-right:3px;")
+                                                                                    a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                    img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;") 
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:17px; font-weight:bold; color:#0098DA; padding:0 0 5px 0; width: 135px;")
                                                                 a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") !{escTitle}
@@ -81,36 +65,21 @@ mixin promo-4prod(data)
                                                         tr
                                                             td(align="center" valign="top" style="padding:5px 25px 7px 0;" height="15px")
                                                                 table(align="left" border="0" cellspacing="0" cellpadding="0")
-                                                                    tr
-                                                                        - var stars= data.sterren2
-                                                                            - for (i = 0.5; i <= stars; stars--) 
+                                                                    - var stars= data.sterren2;
+                                                                    if(stars > 0)
+                                                                        tr
+                                                                            -for(var i = 0; i < Math.floor(stars); i++)
                                                                                 td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                     a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                if stars === 1.5
-                                                                                    -  stars = 0
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
+                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                            -if(stars > Math.floor(stars))
+                                                                                td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                         a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
                                                                                         img(src="img/vast/half-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                        -var greyStars= 5-data.sterren2
-                                                                            case greyStars
-                                                                                when 2.5
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                            img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                            img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                when 1.5
-                                                                                  td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                when 1
-                                                                                  td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                default
-                                                                                    span
+                                                                            -for(var i = 0; i < 5 - Math.ceil(stars); i++)
+                                                                                td(width="15" align="left" valign="top" style="padding-right:3px;")
+                                                                                    a(href=`${data.link2}` name=`star_${data.img2}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                    img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:17px; font-weight:bold; color:#0098DA; padding:0 0 5px 0; width: 135px;")
                                                                 a(href=`${data.link2}` name=`text_${data.img2}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") !{escTitle2}
@@ -137,36 +106,21 @@ mixin promo-4prod(data)
                                                         tr
                                                             td(align="center" valign="top" style="padding:5px 25px 7px 0;" height="15px")
                                                                 table(align="left" border="0" cellspacing="0" cellpadding="0")
-                                                                    tr
-                                                                        - var stars= data.sterren3
-                                                                            - for (i = 0.5; i <= stars; stars--) 
+                                                                    - var stars= data.sterren3;
+                                                                    if(stars > 0)
+                                                                        tr
+                                                                            -for(var i = 0; i < Math.floor(stars); i++)
                                                                                 td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                     a(href=`${data.link3}` name=`star_${data.img3}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                if stars === 1.5
-                                                                                    -  stars = 0
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
+                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                            -if(stars > Math.floor(stars))
+                                                                                td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                         a(href=`${data.link3}` name=`star_${data.img3}` target="_blank" xt="SPCLICKSTREAM")
                                                                                         img(src="img/vast/half-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                        -var greyStars= 5-data.sterren3
-                                                                            case greyStars
-                                                                                when 2.5
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link3}` name=`star_${data.img3}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                            img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link3}` name=`star_${data.img3}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                            img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                when 1.5
-                                                                                  td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link3}` name=`star_${data.img3}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                when 1
-                                                                                  td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link3}` name=`star_${data.img3}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                default
-                                                                                    span
+                                                                            -for(var i = 0; i < 5 - Math.ceil(stars); i++)
+                                                                                td(width="15" align="left" valign="top" style="padding-right:3px;")
+                                                                                    a(href=`${data.link3}` name=`star_${data.img3}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                    img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:17px; font-weight:bold; color:#0098DA; padding:0 0 5px 0; width: 135px;")
                                                                 a(href=`${data.link3}` name=`text_${data.img3}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") !{escTitle3}
@@ -192,36 +146,21 @@ mixin promo-4prod(data)
                                                         tr
                                                             td(align="center" valign="top" style="padding:5px 25px 7px 0;" height="15px")
                                                                 table(align="left" border="0" cellspacing="0" cellpadding="0")
-                                                                    tr
-                                                                        - var stars= data.sterren4
-                                                                            - for (i = 0.5; i <= stars; stars--) 
+                                                                    - var stars= data.sterren4;
+                                                                    if(stars > 0)
+                                                                        tr
+                                                                            -for(var i = 0; i < Math.floor(stars); i++)
                                                                                 td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                     a(href=`${data.link4}` name=`star_${data.img4}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                if stars === 1.5
-                                                                                    -  stars = 0
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
+                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                            -if(stars > Math.floor(stars))
+                                                                                td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                         a(href=`${data.link4}` name=`star_${data.img4}` target="_blank" xt="SPCLICKSTREAM")
                                                                                         img(src="img/vast/half-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                        -var greyStars= 5-data.sterren4
-                                                                            case greyStars
-                                                                                when 2.5
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link4}` name=`star_${data.img4}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                            img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                    td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link4}` name=`star_${data.img4}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                            img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                when 1.5
-                                                                                  td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link4}` name=`star_${data.img4}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                when 1
-                                                                                  td(width="15" align="left" valign="top" style="padding-right:3px;")
-                                                                                        a(href=`${data.link4}` name=`star_${data.img4}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
-                                                                                default
-                                                                                    span
+                                                                            -for(var i = 0; i < 5 - Math.ceil(stars); i++)
+                                                                                td(width="15" align="left" valign="top" style="padding-right:3px;")
+                                                                                    a(href=`${data.link4}` name=`star_${data.img4}` target="_blank" xt="SPCLICKSTREAM")
+                                                                                    img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:17px; font-weight:bold; color:#0098DA; padding:0 0 5px 0; width: 135px;")
                                                                 a(href=`${data.link4}` name=`text_${data.img4}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") !{escTitle4}
