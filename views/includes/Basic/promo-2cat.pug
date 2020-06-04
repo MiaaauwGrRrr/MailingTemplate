@@ -1,4 +1,5 @@
-mixin promo-2cat(data)   
+mixin promo-2cat(data)
+    - var escTitle = data.title
     <!-- PROMO'S -->
     table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
         tr
@@ -25,7 +26,7 @@ mixin promo-2cat(data)
                                                                                         td(align="center" valign="middle" class="px-0" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:24px; line-height:25px; font-weight: bold; padding:25px 15px 15px 15px; color:#CE0000;") 
                                                                                             span=data.voorvoegsel
                                                                                                 span(style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:45px; line-height:22px; font-weight: bold;")=data.procent
-                                                                                                p(class="mobile-title" style="margin:10px 0 0 0;font-size:20px; color: #333333;")=data.title
+                                                                                                p(class="mobile-title" style="margin:10px 0 0 0;font-size:20px; color: #333333;") !{escTitle}
                                                                                                     
                                                                                 table(width="100%" border="0" cellspacing="0" cellpadding="0" class="w-34 td-center" align="left")
                                                                                     tr

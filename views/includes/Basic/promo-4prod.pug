@@ -1,4 +1,8 @@
-mixin promo-4prod(data)    
+mixin promo-4prod(data)   
+    - var escTitle = data.title
+    - var escTitle2 = data.title2
+    - var escTitle3 = data.title3
+    - var escTitle4 = data.title4
     table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
         tr
             td(align="center" valign="top" class="td-padding-outer")
@@ -39,7 +43,7 @@ mixin promo-4prod(data)
                                                                                     img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;") 
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:17px; font-weight:bold; color:#0098DA; padding:0 0 5px 0; width: 135px;")
-                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.title
+                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") !{escTitle}
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA; padding:0px 0 20px 0;")
                                                                 table(border="0" cellspacing="0" cellpadding="0" width="100%")
@@ -78,7 +82,7 @@ mixin promo-4prod(data)
                                                                                     img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:17px; font-weight:bold; color:#0098DA; padding:0 0 5px 0; width: 135px;")
-                                                                a(href=`${data.link2}` name=`text_${data.img2}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.title2
+                                                                a(href=`${data.link2}` name=`text_${data.img2}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") !{escTitle2}
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA; padding:0px 0 20px 0;")
                                                                 table(border="0" cellspacing="0" cellpadding="0" width="100%")
@@ -119,7 +123,7 @@ mixin promo-4prod(data)
                                                                                     img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:17px; font-weight:bold; color:#0098DA; padding:0 0 5px 0; width: 135px;")
-                                                                a(href=`${data.link3}` name=`text_${data.img3}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.title3
+                                                                a(href=`${data.link3}` name=`text_${data.img3}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") !{escTitle3}
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA; padding:0px 0 20px 0;")
                                                                 table(border="0" cellspacing="0" cellpadding="0" width="100%")
@@ -159,7 +163,7 @@ mixin promo-4prod(data)
                                                                                     img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:17px; font-weight:bold; color:#0098DA; padding:0 0 5px 0; width: 135px;")
-                                                                a(href=`${data.link4}` name=`text_${data.img4}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.title4
+                                                                a(href=`${data.link4}` name=`text_${data.img4}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") !{escTitle4}
                                                         tr
                                                             td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#0098DA; padding:0px 0 20px 0;")
                                                                 table(border="0" cellspacing="0" cellpadding="0" width="100%")
