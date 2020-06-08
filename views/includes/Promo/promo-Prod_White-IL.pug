@@ -14,21 +14,21 @@ mixin promo-Prod_White-IL(data)
                                                 td(align="right" valign="top")
                                                     table(border="0" cellspacing="0" cellpadding="0")
                                                         tr
-                                                            td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:16px; line-height:19px; font-weight:bold; color:#FFFFFF; padding:6px 17px 6px 17px; background-color: #D20000")
+                                                            td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:16px; line-height:19px; font-weight:bold; color:#FFFFFF; padding:6px 17px 6px 17px; background-color: #D20000")
                                                                 a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; text-transform: uppercase;")!=data.blockTitle
                                             tr
                                                 td(align="left" valign="top")
                                                     table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
                                                         tr
                                                             td(align="left" valign="top" style="padding:18px 25px 7px 25px;")
-                                                                table(align="left" border="0" cellspacing="0" cellpadding="0")
-                                                                     - var stars= data.sterren;
+                                                                table(align="center" border="0" cellspacing="0" cellpadding="0")
+                                                                    - var stars= data.sterren;
                                                                     if(stars > 0)
                                                                         tr
                                                                             -for(var i = 0; i < Math.floor(stars); i++)
                                                                                 td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                     a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                    img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                        img(src="img/vast/star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
                                                                             -if(stars > Math.floor(stars))
                                                                                 td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                         a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
@@ -36,26 +36,23 @@ mixin promo-Prod_White-IL(data)
                                                                             -for(var i = 0; i < 5 - Math.ceil(stars); i++)
                                                                                 td(width="15" align="left" valign="top" style="padding-right:3px;")
                                                                                     a(href=`${data.link}` name=`star_${data.img}` target="_blank" xt="SPCLICKSTREAM")
-                                                                                    img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")
+                                                                                        img(src="img/vast/grey-star.png" alt="star" style="display:block; border:none; outline:none; text-decoration:none; width: 15px;")  
                                                         tr
-                                                            td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #0098DA; font-size: 20px; line-height: 23px; text-decoration: none; font-weight: bold; padding:5px 25px 0 25px;") 
-                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #0098DA; font-size: 20px; line-height: 23px; text-decoration: none;")!=data.title
+                                                            td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #0098DA; font-size: 20px; line-height: 23px; text-decoration: none; font-weight: bold; padding:5px 25px 0 25px;") 
+                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #0098DA; font-size: 20px; line-height: 23px; text-decoration: none;")!=data.title
                                                         tr
-                                                            td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 16px; line-height: 25px; text-decoration: none; padding:0 25px 0 25px;")
-                                                                ul(style="padding-left: 18px;")
-                                                                - var text = data.list
-                                                                each data.list in text
-                                                                    li 
-                                                                        a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 16px; line-height: 25px; text-decoration: none;")!=data.list
+                                                            td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 16px; line-height: 25px; text-decoration: none; padding:0 25px 0 25px;")
+                                                               
+                                                                            a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 16px; line-height: 25px; text-decoration: none;")!=data.list
                                                         tr
                                                             td(align="left" valign="middle" class="pb-30" style="padding:0 0 25px 25px;")
                                                                 table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
                                                                     tr
-                                                                        td(align="center" valign="middle" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #D20000; font-weight: bold; font-size: 36px; line-height: 23px; text-decoration: none;")
-                                                                           a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size: 36px; line-height: 23px; color: #FFFFFF; text-decoration: none;")
-                                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM"  style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size: 36px; line-height: 23px; color: #FFFFFF; text-decoration: none;")!=data.price
-                                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM"  style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #000000; text-decoration: line-through; text-decoration: none;")!=data.oldprice 
-                                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM"  style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #FFFFFF; text-decoration: none;")!=data.percentage
+                                                                        td(align="center" valign="middle" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #D20000; font-weight: bold; font-size: 36px; line-height: 23px; text-decoration: none;")
+                                                                           a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size: 36px; line-height: 23px; color: #FFFFFF; text-decoration: none;")
+                                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM"  style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size: 36px; line-height: 23px; color: #FFFFFF; text-decoration: none;")!=data.price
+                                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM"  style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #000000; text-decoration: line-through; text-decoration: none;")!=data.oldprice 
+                                                                                a(href=`${data.link}` name=`text_${data.img}` target="_blank" xt="SPCLICKSTREAM"  style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight: bold; font-size: 16px; line-height: 19px; color: #FFFFFF; text-decoration: none;")!=data.percentage
                             table(width="49%" align="left" border="0" cellspacing="0" cellpadding="0" class="table-full h-100")
                                 tr
                                     td(align="center" valign="middle" style="padding:25px 0 25px 0;" class="px-65")
