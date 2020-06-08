@@ -22,9 +22,9 @@ mixin header(data)
                                                                         th(align="center" valign="middle" style="vertical-align: middle; font-size:20px; line-height:24px;")
                                                                             table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
                                                                                 tr
-                                                                                    th(align="center" valign="middle" class="fs-50" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #FFFFFF; font-size: 60px; line-height: 69px; text-decoration: none; font-weight: bold;")=data.percentage
+                                                                                    th(align="center" valign="middle" class="fs-50" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #FFFFFF; font-size: 60px; line-height: 69px; text-decoration: none; font-weight: bold;")!=data.percentage
                                                                                 tr
-                                                                                    th(align="center" valign="middle" class="fs-20" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #FFFFFF; font-size: 26px; line-height: 30px; text-decoration: none;")=data.title
+                                                                                    th(align="center" valign="middle" class="fs-20" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #FFFFFF; font-size: 26px; line-height: 30px; text-decoration: none;")!=data.title
                                                                     tr
                                                                         th(align="center" valign="bottom" class="pt-25")
                                                                             table(border="0" cellspacing="0" cellpadding="0" style="display: inline-block;")
@@ -32,7 +32,7 @@ mixin header(data)
                                                                                     th(align="center" valign="middle" width="16" style="padding-right:10px;")
                                                                                         img(src="https://www.collishop.be/ecomwcs/static/StaticWeb/CS/mailbanners/images/arrow.png" alt="pijl" width="16" height="16" border="0" style="display:block;" )
                                                                                     th(align="center" valign="middle" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:14px; line-height:22px; color:#FFFFFF; display: inline;")
-                                                                                            a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none;")=data.cta
+                                                                                            a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none;")!=data.cta
                             table(width="49%" height="300" align="right" border="0" cellspacing="0" cellpadding="0" class="h-100 table-full h-100")
                                 tr
                                     td(align="right" valign="top" style="font-size: 0; line-height: 0; padding: 0;")

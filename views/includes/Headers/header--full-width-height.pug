@@ -22,10 +22,10 @@ mixin header--full-width-height(data)
                                     td(align="center" valign="top")
                                         table(width="100%" border="0" cellspacing="0" cellpadding="0")
                                             tr
-                                                td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:25px; line-height:35px;  padding-bottom: 10px;" class="fs-20")=data.title
+                                                td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:25px; line-height:35px;  padding-bottom: 10px;" class="fs-20")!=data.title
                                                    //- p(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:30px; line-height:35px;  padding-bottom: 10px;" class="fs-20") Tot  <span style="display: inline-block; font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:70px; line-height:82px; font-weight: bold; color: #D20000;" class="fs-50">- xx %</span> op onze selectie cadeau-ideeën
                                         table(border="0" cellspacing="0" cellpadding="0")
                                             tr
                                                 td(align="center" valign="top" bgcolor="#0098DA" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px; border-radius: 25px;")
-                                                    a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")=data.cta
+                                                    a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")!=data.cta
     <!-- HEADER FULL WIDTH HEIGHT -->

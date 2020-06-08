@@ -11,9 +11,9 @@ mixin inspo-L-IR_TextL_MobileTop(data)
                                     td(align="center" valign="top" style="padding:0 0 0 5px;" class="px-0 pt-20")
                                         table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
                                             tr
-                                                td(align="left" valign="top" class="pt-0" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 20px; line-height: 23px; text-decoration: none; padding-bottom: 8px;")=data.title
+                                                td(align="left" valign="top" class="pt-0" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 20px; line-height: 23px; text-decoration: none; padding-bottom: 8px;")!=data.title
                                             tr
-                                                td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 16px; line-height: 22px; text-decoration: none;")=data.subTitle
+                                                td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 16px; line-height: 22px; text-decoration: none;")!=data.subTitle
                                 tr
                                     td(align="left" valign="top" class="pb-30 px-0" style="padding: 8px 0 0 5px;")
                                         table(border="0" cellspacing="0" cellpadding="0")
@@ -21,7 +21,7 @@ mixin inspo-L-IR_TextL_MobileTop(data)
                                                 td(align="left" valign="top" width="16" style="padding-right:10px;")
                                                     img(src="https://www.collishop.be/ecomwcs/static/StaticWeb/CS/mailbanners/images/arrow.png" alt="pijl" width="16" height="16" border="0" style="display:block;")
                                                 td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:14px; line-height:22px; color:#0098DA; display: inline")
-                                                    a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")=data.cta
+                                                    a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;")!=data.cta
                             table(width="49%" align="right" border="0" cellspacing="0" cellpadding="0" class="table-full h-100")
                                 tr
                                     td(align="right" valign="top" style="padding:0 0 0 0;")
