@@ -4,11 +4,11 @@ mixin Button(data)
         td(align="center" valign="top")
             table(border="0" cellspacing="0" cellpadding="0")
                 tr
-                    td(align="center" valign="top" bgcolor=`${data.bgcolor}` style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px;")
+                    td(align="center" valign="top" bgcolor=`${data.CTAbgcolor}` style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px;")
                          table(border="0" cellspacing="0" cellpadding="0")
                             tr
                                 td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight:700; font-size:18px; line-height:21px; color:#FFFFFF;")
-                                    a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")!=data.cta
+                                    a(href=`${data.link}` name=`${data.name}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")!=data.cta
                                 td(align="center" valign="middle" width="16" style="padding-left:10px;")
-                                    a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")    
+                                    a(href=`${data.link}` name=`${data.name}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")    
                                         img(src="img/vast/arrow-icon-transparent.png" width="16" height="16" alt="pijl" border="0" style="display:block;")

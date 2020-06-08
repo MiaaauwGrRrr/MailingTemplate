@@ -5,12 +5,15 @@ mixin header--full-width-height(data)
             td(align="center" valign="top" class="td-padding-outer" style="padding:0 0 0 0;")
                 table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor=`${data.bgcolor}`)
                     tr
-                        td(align="left" valign="top" class="td-center")
+                        td(align="left" valign="top" class="td-center td-padding-outer pb-30" style="padding:30px 0 0 0;")
+                            table(width="100%" border="0" cellspacing="0" cellpadding="0")
+                                tr
+                                    td(align="center" valign="top" style="font-family: Titillium Web,Titillium Web, Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:30px; line-height:35px;" class="fs-20")!=data.title
                             table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor=`${data.bgcolor}`)
                                 tr
                                     td(align="center" valign="top")
                                         a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM"  style="font-size: 0; line-height: 0; padding: 0;")
-                                            img(src=`img/${data.img}.jpg` width="600" height="328" alt=`${data.img}`  border="0" class="img-full" style="display: block;")
+                                            img(src=`img/${data.img}.jpg` width="600" height="auto" alt=`${data.img}`  border="0" class="img-full" style="display: block;")
     table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
         tr
             td(align="center" valign="top" class="td-padding-outer pb-30" style="padding:30px 0 60px 0;")
@@ -26,6 +29,11 @@ mixin header--full-width-height(data)
                                                    //- p(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:30px; line-height:35px;  padding-bottom: 10px;" class="fs-20") Tot  <span style="display: inline-block; font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:70px; line-height:82px; font-weight: bold; color: #D20000;" class="fs-50">- xx %</span> op onze selectie cadeau-ideeën
                                         table(border="0" cellspacing="0" cellpadding="0")
                                             tr
-                                                td(align="center" valign="top" bgcolor="#0098DA" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px; border-radius: 25px;")
-                                                    a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")!=data.cta
-    <!-- HEADER FULL WIDTH HEIGHT -->
+                                                td(align="center" valign="top" bgcolor=`${data.CTAbgcolor}` style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px;")
+                                                     table(border="0" cellspacing="0" cellpadding="0")
+                                                        tr
+                                                            td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight:700; font-size:18px; line-height:21px; color:#FFFFFF;")
+                                                                a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")!=data.cta
+                                                            td(align="center" valign="middle" width="16" style="padding-left:10px;")
+                                                                a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")    
+                                                                    img(src="img/vast/arrow-icon-transparent.png" width="16" height="16" alt="pijl" border="0" style="display:block;")
