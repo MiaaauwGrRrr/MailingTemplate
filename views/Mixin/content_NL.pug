@@ -7,6 +7,8 @@
 include ../includes/Headers/header--full-width-height.pug
 include ../includes/Basic/Title.pug
 
+include ../includes/Special/promocode.pug
+
 
 include ../includes/Promo/promo-A-IL-TextR_MobileBottom.pug
 include ../includes/Promo/promo-C-IR_TextL_MobileBottom.pug
@@ -30,6 +32,15 @@ include ../includes/Inspo/inspo-K-IR_TextL_MobileBottom.pug
 include ../includes/Inspo/inspo-L-IR_TextL_MobileTop.pug
 
 <!-- INTRO -->
++header--full-width-height({
+title: " test",
+cta: "test",
+link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
+img: "Birthday_campaign-bijna-header",
+bgcolor: "#FFFFFF",
+color: "#FFFFFF"
+})
+
 table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
     tr
         td(align="center" valign="top" class="td-padding-outer")
@@ -38,139 +49,55 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                     td(align="left" valign="top" class="td-padding-inner" style="padding:25px 0 25px 0;")
                         table(width="100%" border="0" cellspacing="0" cellpadding="0")
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:30px; color:#000000; font-weight:bold; padding-bottom:10px;") Beste klant,
+                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:30px; color:#000000; font-weight:bold; padding-bottom:10px;") Je bent bijna jarig, <perso voornaam>…
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000; margin-bottom: 10px;") Mis geen enkele zonnestraal deze zomer en geniet van de DreamLand-actie op tuinmeubelen. Je krijgt €25 korting bij een aankoop vanaf €250 en zelfs €100 korting bij een aankoopwaarde vanaf €500.
-                            tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000;") Maar haast je, want de actie loopt alleen dit weekend!
-                            tr
+                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000; margin-bottom: 10px;") En, al plannen gemaakt om dat te vieren? Wat je ook doet, wij hebben  alvast een paar leuke suggesties om jezelf op te trakteren.
+                            //-tr
                                  td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000;")  
                                     p Groeten, <br>Het ColliShop-team
 
 <!-- INTRO -->
 
-+header--full-width-height({
-title: "Tot € 100 korting op Tuinmeubelen",
-cta: "Ontdek de actie",
++promocode({
+title: "Speciaal voor jou: € 5 korting op je volgende bestelling.",
+promocode: "AEI148DSS",
+cta: "Neem je korting",
 link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
-img: "actie_tuinmeubelen-nl",
+img: "Birthday campaign-bijna-header",
 bgcolor: "#FFFFFF",
 color: "#FFFFFF"
+
 })
 
-
-+promo-2cat({
-voorvoegsel: "",
-procent: "",
-title: "Parasols en <br> partytenten",
-cta: "Naar het aanbod",
-link: "https://www.collishop.be/e/nl/cs/parasols-en-partytenten",
-img: "actie_Parasols_en_Partytenten",
-
-voorvoegsel2: "",
-procent2: "",
-title2: "Bloempotten en bloembakken",
-cta2: "Bekijk het aanbod",
-link2: "https://www.collishop.be/e/nl/cs/bloembakken-bloempotten-en-plantengieters",
-img2: "actie_Bloembakken_Bloempotten_en_Plantengieters",
-})
-
-
-+promo-A-IL-TextR_MobileBottom({
-title: "Vind het ideale cadeau voor Vaderdag",
-subtitle: "Kleine prijzen, grote kortingen",
-cta: "Dit zijn onze cadeautips",
-link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
-img: "actie_vaderdag",
-bgcolor: "#E1E4E5", 
-color: "#FFFFFF"
-})
-
-
-+promo-4prod({
-blockTitle: "De leukste cadeaus voor je papa",
-
-title: "De'Longhi <br> Airconditioner",
-link: "https://www.collishop.be/e/nl/cs/delonghi-airconditioner-silent-pac-n90--917304--11-1",
-img: "actie_Airconditioner",
-price: "€ 529 ",
-oldprice: "€ 599",
-percentage: "12%",
-sterren: 0,
-
-title2: "Zwilling Pottenset 5-delig",
-link2: "https://www.collishop.be/e/nl/cs/zwilling-5-delige-kookpottenset-base-299007",
-img2: "actie_kookpottenset",
-price2: "€ 179 ",
-oldprice2: "€ 309 ",
-percentage2: "42%",
-sterren2: 4.5,
-
-title3: "De'Longhi Espressomachine",
-link3: "https://www.collishop.be/e/nl/cs/delonghi-volautomatische-espressomachine-dinamica-ecam35055sb-grijs-354876",
-img3: "actie_espressomachine",
-price3: "€ 699 ", 
-oldprice3: "€849 ",
-percentage3: "18%",
-sterren3: 0,
-
-title4: "Weber <br>Accessoireset",
-link4: "https://www.collishop.be/e/nl/cs/weber-accessoireset-909586",
-img4: "actie_Accessoireset",
-price4: "€ 49,00 ",
-oldprice4: "€ 59,95 ",
-percentage4: "18%",
-sterren4: 5
-})
-
-+promo-2cat({
-voorvoegsel: "",
-procent: "",
-title: "Potten en pannen",
-cta: "Bekijk ze allemaal",
-link: "https://www.collishop.be/e/nl/cs/potten-en-pannen",
-img: "actie_Potten_en_pannen",
-
-voorvoegsel2: "",
-procent2: "",
-title2: "Barbecue",
-cta2: "Vind een passend model",
-link2: "https://www.collishop.be/e/nl/cs/barbecue",
-img2: "actie_Barbecue",
-})
-
-+promo-A-IL-TextR_MobileBottom({
-title: "Houtskool-, gasbarbecues en accessoires van Barbecook",
-subtitle: "Topkwaliteit voor een gezellige barbecue! ",
-cta: "Alles van Barbecook",
-link: "https://www.collishop.be/e/nl/cs/merken/merk-barbecook?#facet:&productBeginIndex:0&facetLimit:&orderBy:5&pageView:grid&minPrice:&maxPrice:&pageSize:&",
-img: "actie_Barbecook",
-bgcolor: "#83BE27", 
-color: "#FFFFFF"
-})
-
-+Title({
-title: "Hoog tijd om van dekbedovertrek te wisselen!",
-})
-
-
-+promo-D-IR_TextL_MobileTop({
-title: "Dekbedovertrekken in Outlet",
-subTitle: "Grijp je laatste kans en profiteer van <span style='color:#ce0000'> straffe promo's in onze Outlet</span>",
-cta: "Ga naar de Outlet",
-link: "https://www.collishop.be/e/nl/cs/outlet-dekbedovertrekken",
-img: "actie_Dekbedovertrekken",
-bgcolor: "#FED9DF",
-color: "#FFFFFF"
-})
-
-+inspo-E-IL_TextR_Border_MobileBottom({
-title: "5 Trendy stijlen voor je dekbedovertrek",
-subTitle: "Stop je bed in een hip jasje met een leuk motief, een zachte kleur of een fijn stofje.",
-cta: "Laat je inspireren",
-link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
-img: "actie_5_mooiste_trends",
-bgcolor: "#83C8DF",
++inspo-L-IR_TextL_MobileTop({
+title: "Geef een etentje thuis",
+subTitle: "Hier vind je alles wat je nodig hebt om  in stijl uit te pakken bij je gasten. ",
+cta: "Ja, dat doe ik!",
+link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
+img: "koken_en_tafelen",
+bgcolor: "#FFFFFF",
 color: "#FFFFFF"
 
-    })
+})
+
++inspo-L-IR_TextL_MobileTop({
+title: "Slaap eens lekker uit",
+subTitle: "Laat de boel de boel: ga gewoon voor me-time onder de lakens met deze topselectie, ",
+cta: "Oké, ik blijf in bed",
+link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
+img: "slapen",
+bgcolor: "#FFFFFF",
+color: "#FFFFFF"
+
+})
+
++inspo-L-IR_TextL_MobileTop({
+title: "Trek er lekker op uit",
+subTitle: "Ben je toe aan een heerlijk dagje weg? Dankzij deze toppers geniet je nog méér.",
+cta: "Yes, ik ben ermee wegie",
+link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
+img: "reizen",
+bgcolor: "#FFFFFF",
+color: "#FFFFFF"
+
+})
