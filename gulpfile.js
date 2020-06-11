@@ -10,6 +10,8 @@ var gulp = require('gulp');
     replace = require('gulp-replace');
     archive = require('gulp-zip');
     clean_directory = require('gulp-clean');
+    fs = require('fs');
+
 
 
 // Default task (links from the package.json)
@@ -104,6 +106,33 @@ return gulp.src(['build/zip_temp'])
 });
 
 
+async function GetBlockNames() {
+  return new Promise((resolve, reject) => {
+    fs.readFile('test.pug', 'utf8', function (err,data) {
+      if (err) return console.log(err);
+      let matches = data.match(/\+([^\(\{]+\(\{[^\)\}]+\}\))/gm);
+      let templateBlocks = {};
+      for(var i = 0; i < matches.length; i++) {
+        var name = matches[i].match(/\+([^\(\{]+)/)[1];
+        templateBlocks[name] = matches[i];
+      }
+      resolve(templateBlocks);
+    });
+  })
+}
+
+gulp.task('fillInBlocks', function(done) {
+  GetBlockNames().then(result => {
+    let src = gulp.src(['views/Mixin/content_*.pug']);
+    Object.keys(result).forEach(key => { 
+      src = src.pipe(replace(new RegExp(`^${key}$`, 'gm'), result[key]));
+    });
+    src.pipe(gulp.dest('views/Mixin/'));
+    done();
+  });
+});
+
+
 // Copy and compress into Zip
 function zip() {
   var dist = "dist";
@@ -191,3 +220,4 @@ gulp.task('watch', function() {
 
 gulp.task("alle", gulp.series("clean", "build-nl","build-fr", "minifier", "browser-sync", "clearCache", "watch" ));
 gulp.task("zip", gulp.series("clean", "build-nl", "build-fr", "minifier", "preZipIndexNL", "preZipIndexFR", "preZipAssetsNL", "preZipAssetsFR", "zip-nl", "zip-fr", "delete-temp"));
+gulp.task("test", gulp.series("fillInBlocks"));
