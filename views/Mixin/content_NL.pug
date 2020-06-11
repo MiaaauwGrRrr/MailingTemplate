@@ -6,6 +6,8 @@
 
 include ../includes/Headers/header--full-width-height.pug
 include ../includes/Basic/Title.pug
+include ../includes/Basic/Button.pug
+include ../includes/Basic/Percentage.pug
 
 
 include ../includes/Promo/promo-A-IL-TextR_MobileBottom.pug
@@ -17,9 +19,12 @@ include ../includes/Promo/promo-F-IL_TitleR_MobileTop.pug
 include ../includes/Promo/promo-G-IR_TitleL_MobileBottom.pug
 include ../includes/Promo/promo-H-IR_TitleL_MobileTop.pug
 include ../includes/Promo/promo-Prod_Red-IL.pug
+include ../includes/Promo/promo-Prod_Red-IR.pug
+include ../includes/Promo/promo-Prod_White-IL.pug
 
 include ../includes/Basic/promo-2cat.pug
 include ../includes/Basic/promo-4prod.pug
+include ../includes/Basic/promo-2prod.pug
 
 include ../includes/Inspo/inspo-A-IL_TitleR_MobileBottom.pug
 include ../includes/Inspo/inspo-B-IL_TitleR_MobileTop.pug
@@ -34,7 +39,38 @@ include ../includes/Inspo/inspo-J-IL_TextR_MobileTop.pug
 include ../includes/Inspo/inspo-K-IR_TextL_MobileBottom.pug
 include ../includes/Inspo/inspo-L-IR_TextL_MobileTop.pug
 
-<!-- INTRO -->
++Title({
+title: "header--full-width-height",
+})
+
++header--full-width-height({
+title: "Tot € 100 korting op Tuinmeubelen",
+cta: "Ontdek de actie",
+link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
+img: "temp/header-image-full-width",
+bgcolor: "#EAEBE5",
+CTAbgcolor: "#E83C5F",
+})
++Percentage({
+tot: "Tot ",
+percentage: "-70%",
+categorie: "<br> op ALLES van schoonmaken",
+cta:"Klik hier jo",
+CTAbgcolor: "#E83C5F",
+link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
+
+})
++Button({
+cta: "inspo-L-IR_TextL_MobileTop",
+name:"Name of the link",
+link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
+CTAbgcolor: "#E83C5F"
+})
+
++Title({
+title: "Intro",
+})
+
 table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
     tr
         td(align="center" valign="top" class="td-padding-outer")
@@ -43,28 +79,382 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                     td(align="left" valign="top" class="td-padding-inner" style="padding:25px 0 25px 0;")
                         table(width="100%" border="0" cellspacing="0" cellpadding="0")
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:30px; color:#000000; font-weight:bold; padding-bottom:10px;") Beste klant,
+                                td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:20px; line-height:30px; color:#333333; font-weight:bold; padding-bottom:10px;") Beste klant,
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000; margin-bottom: 10px;") Mis geen enkele zonnestraal deze zomer en geniet van de DreamLand-actie op tuinmeubelen. Je krijgt €25 korting bij een aankoop vanaf €250 en zelfs €100 korting bij een aankoopwaarde vanaf €500.
+                                td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333; margin-bottom: 10px;") Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae officia illo culpa laudantium atque nam, illum consequatur veniam, ducimus optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000;") Maar haast je, want de actie loopt alleen dit weekend!
+                                td(align="left"  valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333; padding-top:7px;") optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor
                             tr
-                                 td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000;")  
+                                 td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333;")  
                                     p Groeten, <br>Het ColliShop-team
 
 <!-- INTRO -->
 
++Title({
+title: "promo-2cat",
+})
 
++promo-2cat({
+voorvoegsel: "TOT ",
+procent: "-35%",
+title: "op ALLES van loempia's",
+cta: "Smull erop los",
+link: "https://www.collishop.be/e/nl/cs/parasols-en-partytenten",
+img: "actie_Parasols_en_Partytenten",
+
+voorvoegsel2: "TOT",
+procent2: "-75%",
+title2: "op wasmachines",
+cta2: "Witter kan het niet",
+link2: "https://www.collishop.be/e/nl/cs/bloembakken-bloempotten-en-plantengieters",
+img2: "actie_Bloembakken_Bloempotten_en_Plantengieters",
+})
+
++promo-2prod({
+sterren:0,
+title: "Nova Friteuse Aerofryer XL zwart",
+cta: "Smull erop los",
+link: "https://www.collishop.be/e/nl/cs/parasols-en-partytenten",
+img: "temp/product-image4",
+
+sterren2: 3.5,
+price2: "",
+percentage2:"",
+oldPrice2:"",
+title2: "Nova Friteuse Aerofryer XL zwart",
+cta2: "Witter kan het niet",
+link2: "https://www.collishop.be/e/nl/cs/bloembakken-bloempotten-en-plantengieters",
+img2: "temp/product-image4",
+})
+
+
+
++Title({
+title: "inspo-A-IL_TitleR_MobileBottom",
+})
++inspo-A-IL_TitleR_MobileBottom({
+title: "Hoe kies je de juiste koffie­machine?",
+subTitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m n o p q r s t u v w x y z",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/infoimage-1",
+bgcolor: "#B5CDAE",
+})
+    
++Title({
+title: "inspo-B-IL_TitleR_MobileTop",
+})
++inspo-B-IL_TitleR_MobileTop({
+title: "Maak zelf het lekkerste ijs en sorbet",
+subTitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m n o p q r s t u v w x y z",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/infoimage-2",
+bgcolor: "#B5CDAE",
+})
+    
++Title({
+title: "inspo-C-IR_TitleL_MobileBottom",
+})
++inspo-C-IR_TitleL_MobileBottom({
+title: "Hoe kies je de juiste koffie­machine?",
+subTitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m n o p q r s t u v w x y z",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/infoimage-1",
+bgcolor: "#B5CDAE",
+})
+    
++Title({
+title: "inspo-D-IR_TitleL_MobileTop",
+})
++inspo-D-IR_TitleL_MobileTop({
+title: "Maak zelf het lekkerste ijs en sorbet",
+subTitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m n o p q r s t u v w x y z",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/infoimage-2",
+bgcolor: "#B5CDAE",
+})
+    
++Title({
+title: "inspo-E-IL_TextR_Border_MobileBottom",
+})
++inspo-E-IL_TextR_Border_MobileBottom({
+title: "Maak zelf het lekkerste ijs en sorbet",
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim in lacus elementum viverra. Integer mattis porttitor metus, ac mollis est hendrerit vitae.",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/infoimage-2-1",
+})
+
++Title({
+title: "inspo-F-IL_TextR_Border_MobileTop",
+})
++inspo-F-IL_TextR_Border_MobileTop({
+title: "Maak zelf het lekkerste ijs en sorbet",
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim in lacus elementum viverra. Integer mattis porttitor metus, ac mollis est hendrerit vitae.",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/infoimage-3",
+})
+    
++Title({
+title: "inspo-G-IR_TextL_Border_MobileBottom",
+})
++inspo-G-IR_TextL_Border_MobileBottom({
+title: "Maak zelf het lekkerste ijs en sorbet",
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim in lacus elementum viverra. Integer mattis porttitor metus, ac mollis est hendrerit vitae.",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/infoimage-2",
+})
+    
++Title({
+title: "inspo-H-IR_TextL_Border_MobileTop",
+})
++inspo-H-IR_TextL_Border_MobileTop({
+title: "Maak zelf het lekkerste ijs en sorbet",
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim in lacus elementum viverra. Integer mattis porttitor metus, ac mollis est hendrerit vitae.",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/infoimage-3",
+})
+    
++Title({
+title: "inspo-I-IL_TextR_MobileBottom",
+})
++inspo-I-IL_TextR_MobileBottom({
+title: "Maak zelf het lekkerste ijs en sorbet",
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim in lacus elementum viverra.",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/header-image7",
+})
+    
++Title({
+title: "inspo-J-IL_TextR_MobileTop",
+})
++inspo-J-IL_TextR_MobileTop({
+title: "Hoe kies je de juiste koffiemachine?",
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim in lacus elementum viverra.",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/header-image6",
+})
+    
++Title({
+title: "inspo-K-IR_TextL_MobileBottom",
+})
++inspo-K-IR_TextL_MobileBottom({
+title: "Maak zelf het lekkerste ijs en sorbet",
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim in lacus elementum viverra.",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/header-image6",
+})
+    
++Title({
+title: "inspo-L-IR_TextL_MobileTop",
+})
++inspo-L-IR_TextL_MobileTop({
+title: "Hoe kies je de juiste koffiemachine",
+subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim in lacus elementum viverra.",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
+img: "temp/header-image7",
+})
+
+
+
+
+
+
+
+
+
+
+
++Title({
+title: "promo-A-IL-TextR_MobileBottom",
+})
++promo-A-IL-TextR_MobileBottom({
+title: "Gratis ijsmaker + receptenboekje",
+subtitle: "b.a.v. een AEG keukenrobot uit onze selectie",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
+
++Title({
+title: "promo-B-IL_TextR_MobileTop",
+})
++promo-B-IL_TextR_MobileTop({
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y z y z a b c d e f g ",
+subtitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m ",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
+
++Title({
+title: "promo-C-IR_TextL_MobileBottom",
+})
++promo-C-IR_TextL_MobileBottom({
+title: "Gratis ijsmaker + receptenboekje",
+subtitle: "b.a.v. een AEG keukenrobot uit onze selectie",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
+
++Title({
+title: "promo-D-IR_TextL_MobileTop",
+})
++promo-D-IR_TextL_MobileTop({
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y z y z a b c d e f g ",
+subtitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m ",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
+
++Title({
+title: "promo-E-IL_TitleR_MobileBottom",
+})
+
++promo-E-IL_TitleR_MobileBottom({
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y z y z a b c d e f g ",
+subtitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m ",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#333333", 
+})
+
+
++Title({
+title: "promo-F-IL_TitleR_MobileTop",
+})
+
+
++promo-F-IL_TitleR_MobileTop({
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y z y z a b c d e f g ",
+subtitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m ",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
+
++Title({
+title: "promo-G-IR_TitleL_MobileBottom",
+})
+
++promo-G-IR_TitleL_MobileBottom({
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y z y z a b c d e f g ",
+subtitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m ",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
+
++Title({
+title: "promo-H-IR_TitleL_MobileTop",
+})
+
++promo-H-IR_TitleL_MobileTop({
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y z y z a b c d e f g ",
+subtitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m ",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
+
++Title({
+title: "promo-Prod_Red-IL",
+})
 
 +promo-Prod_Red-IL({
-blockTitle: "Enkel deze kaka week",
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y z y z a b c d e f g ",
+subtitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m ",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
 
-title: "De'Longhi  Airconditioner",
++Title({
+title: "promo-Prod_Red-IR",
+})
+
++promo-Prod_Red-IR({
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y z y z a b c d e f g ",
+subtitle: "a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h i j k l m ",
+cta: "Bekijk de selectie",
+link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
+img: "actie_vaderdag",
+bgcolor: "#E1E4E5", 
+})
+
+
+
+
+
+
+
+
+
++Title({
+title: "omo-4prod",
+})
+
++promo-4prod({
+blockTitle: "",
+
+title: "a b c d e f g h i j k l m n o p q r s t u v w x y",
 link: "https://www.collishop.be/e/nl/cs/delonghi-airconditioner-silent-pac-n90--917304--11-1",
 img: "actie_Airconditioner",
-price: "€ 529",
+price: "€ 529 ",
 oldprice: "€ 599",
 percentage: "12%",
-sterren: 2,
-bgcolor:"#777777"
+sterren: 0,
+
+title2: "a b c d e f g h i j k l m n o p q r s t u v w x y",
+link2: "https://www.collishop.be/e/nl/cs/zwilling-5-delige-kookpottenset-base-299007",
+img2: "actie_kookpottenset",
+price2: "€ 179 ",
+oldprice2: "€ 309 ",
+percentage2: "42%",
+sterren2: 4.5,
+
+title3: "a b c d e f g h i j k l m n o p q r s t u v w x y",
+link3: "https://www.collishop.be/e/nl/cs/delonghi-volautomatische-espressomachine-dinamica-ecam35055sb-grijs-354876",
+img3: "actie_espressomachine",
+price3: "€ 699 ", 
+oldprice3: "€849 ",
+percentage3: "18%",
+sterren3: 0,
+
+title4: "a b c d e f g h i j k l m n o p q r s t u v w x y",
+link4: "https://www.collishop.be/e/nl/cs/weber-accessoireset-909586",
+img4: "actie_Accessoireset",
+price4: "€ 49,00 ",
+oldprice4: "€ 59,95 ",
+percentage4: "18%",
+sterren4: 5
+})
+
++Title({
+title: "Titel",
+})
+
++Title({
+title: " Speciaal voor jou",
 })
