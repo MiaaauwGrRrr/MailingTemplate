@@ -1,4 +1,4 @@
-mixin inspo-A-IL_TitleR_MobileBottom(data)        
+mixin inspo-N-IR-TextL_MobileBottom(data)    
     <!-- PROMO BLOK -->
     table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
         tr
@@ -6,27 +6,25 @@ mixin inspo-A-IL_TitleR_MobileBottom(data)
                 table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor=`${data.bgcolor}`)
                     tr
                         td(align="left" valign="top")
-                            table(width="49%" height="300" align="right" border="0" cellspacing="0" cellpadding="0" class="table-full h-100" bgcolor=`${data.bgcolor}`)
+                            table(width="49%" height="300" align="left" border="0" cellspacing="0" cellpadding="0" class="table-full h-100" bgcolor=`${data.bgcolor}`)
                                 tr
-                                    td(align="center" valign="middle" class="mso-pt-50")
+                                    td(align="center" valign="middle" style="padding:20px 25px 0 25px;")
                                         table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
                                             tr
-                                                td(align="center" valign="bottom" style="padding-top: 25px;")
+                                                td(align="center" valign="top" class="pt-25" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #FFFFFF; font-size: 30px; font-weight:700; line-height: 30px; text-decoration: none; padding-bottom: 25px;")!=data.title
                                             tr
-                                                td(align="center" valign="middle" style="padding:15px 25px 0 25px;")
-                                                    table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
-                                                        tr
-                                                            td(align="center" valign="middle" class="pt-5" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #FFFFFF; font-weight: bold; font-size: 30px; line-height: 30px; text-decoration: none; padding-bottom: 16px;")!=data.title
-                                            tr
-                                                td(align="center" valign="bottom" style="padding-top: 25px;")
+                                                td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #FFFFFF; font-size: 20px; line-height: 29px; text-decoration: none; padding-bottom: 25px;")!=data.subtitle
+                                tr
+                                                td(align="center" valign="top" style="padding-bottom: 25px;")
                                                     table(border="0" cellspacing="0" cellpadding="0")
                                                         tr
                                                             td(align="left" valign="middle" width="16" style="padding-right:10px;")
                                                                 img(src="https://www.collishop.be/ecomwcs/static/StaticWeb/CS/mailbanners/images/arrow.png" alt="pijl" width="16" height="16"  border="0" style="display:block;" )
                                                             td(align="center" valign="bottom" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:17px; line-height:21px; color:#FFFFFF;")
                                                                 a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none;")!=data.cta
-                            table(width="49%" height="300" align="left" border="0" cellspacing="0" cellpadding="0" class="table-full h-100" bgcolor="#EEEEEE")
+                            table(width="49%" height="300" align="right" border="0" cellspacing="0" cellpadding="0" class="table-full h-100")
                                 tr
-                                    td(align="center" valign="middle")
+                                    td(align="right" valign="top" width="100%")
                                         a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM")
-                                            img(src=`img/${data.img}.jpg` alt=`${data.img}` width="300" height="300" border="0" class="img-full" style="display:block;")
+                                            img(src=`img/${data.img}.jpg` width="300" height="300" alt=`${data.img}` border="0" class="img-full" style="display:block;") 
+    <!-- PROMO BLOK -->
