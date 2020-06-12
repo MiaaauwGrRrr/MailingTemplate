@@ -3,7 +3,6 @@
 //- FED9DF  ROZE
 //- 83C8DF  BLAUW
 //- E1E4E5  GRIJS
-
 include ../includes/Headers/header--full-width-height.pug
 include ../includes/Basic/Title.pug
 
@@ -15,6 +14,7 @@ include ../includes/Promo/promo-D-IR_TextL_MobileTop.pug
 
 include ../includes/Basic/promo-2cat.pug
 include ../includes/Basic/promo-4prod.pug
+include ../includes/Basic/promo-2prod.pug
 
 include ../includes/Inspo/inspo-A-IL_TitleR_MobileBottom.pug
 include ../includes/Inspo/inspo-B-IL_TitleR_MobileTop.pug
@@ -29,148 +29,149 @@ include ../includes/Inspo/inspo-J-IL_TextR_MobileTop.pug
 include ../includes/Inspo/inspo-K-IR_TextL_MobileBottom.pug
 include ../includes/Inspo/inspo-L-IR_TextL_MobileTop.pug
 
-<!-- INTRO -->
+<!-- PROMOCODE -->
 table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
     tr
-        td(align="center" valign="top" class="td-padding-outer")
-            table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#FFFFFF")
+        td(align="center" valign="top" class="td-padding-outer" style="padding:25px 0 25px 0;")
+            table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#FDD01A")
                 tr
-                    td(align="left" valign="top" class="td-padding-inner" style="padding:25px 0 25px 0;")
-                        table(width="100%" border="0" cellspacing="0" cellpadding="0")
+                    td(align="center" valign="top" style="padding:25px 60px 25px 60px;")
+                        table(width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FDD01A")
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:30px; color:#000000; font-weight:bold; padding-bottom:10px;") Beste klant,
+                                td(align="center" valign="top" style="padding-bottom: 15px;")
+                                    a(href="https://www.collishop.be/e/nl/cs/vuilniszakken?#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&pageSize:&" name="FILLME" target="_blank" xt="SPCLICKSTREAM" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:24px; line-height:28px; color:#000000; text-decoration: none;") <span style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:24px; line-height:28px; color:#000000; text-decoration: none; font-weight: bold;">Exclusieve korting: tot -15%</span> op Brabantia vuilniszakken met onderstaande code
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000; margin-bottom: 10px;") Mis geen enkele zonnestraal deze zomer en geniet van de DreamLand-actie op tuinmeubelen. Je krijgt €25 korting bij een aankoop vanaf €250 en zelfs €100 korting bij een aankoopwaarde vanaf €500.
+                                td(align="center" valign="top")
+                                    table(bgcolor="#CAA614" style="border-radius: 22px;")
+                                        tr
+                                            td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:20px; line-height:23px; font-weight:bold; color:#FFFFFF; padding:10px 30px 10px 30px; text-decoration: none;") B222
                             tr
-                                td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000;") Maar haast je, want de actie loopt alleen dit weekend!
-                            tr
-                                 td(align="left" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:15px; line-height:24px; color:#000000;")  
-                                    p Groeten, <br>Het ColliShop-team
-
-<!-- INTRO -->
-
+                                td(align="center" valign="top" style="padding: 15px 0 0 5px;")
+                                   // a(href="https://www.collishop.be/e/nl/cs/vuilniszakken" name="FILLME" target="_blank" xt="SPCLICKSTREAM" style="color:#000000; text-decoration:none;")    
+                                        table(border="0" cellspacing="0" cellpadding="0")
+                                            tr
+                                                td(align="left" valign="top" width="16" style="padding-right:10px;")
+                                                    img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/arrow-icon-red.png" width="16" height="16" alt="" border="0" style="display:block;")
+                                                td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:14px; line-height:17px; color:#000000; display: inline") Grijp je kans
+<!-- PROMOCODE -->
 +header--full-width-height({
-title: "Tot € 100 korting op Tuinmeubelen",
-cta: "Ontdek de actie",
-link: "https://www.collishop.be/e/nl/cs/tuinmeubelen",
-img: "actie_tuinmeubelen-nl",
+title: "",
+subTitle: 'Tot  <span style="display: inline-block; font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:70px; line-height:82px; font-weight: bold; color: #D20000;" class="fs-50">- 15 %</span> <br>bij aankoop van Brabantia vuilniszakken',
+cta: "Grijp je kans!",
+link: "https://www.collishop.be/e/nl/cs/vuilniszakken?#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&pageSize:&",
+img: "header1",
 bgcolor: "#FFFFFF",
 color: "#FFFFFF"
 })
 
-
-+promo-2cat({
-voorvoegsel: "",
-procent: "",
-title: "Parasols en <br> partytenten",
-cta: "Naar het aanbod",
-link: "https://www.collishop.be/e/nl/cs/parasols-en-partytenten",
-img: "actie_Parasols_en_Partytenten",
-
-voorvoegsel2: "",
-procent2: "",
-title2: "Bloempotten en bloembakken",
-cta2: "Bekijk het aanbod",
-link2: "https://www.collishop.be/e/nl/cs/bloembakken-bloempotten-en-plantengieters",
-img2: "actie_Bloembakken_Bloempotten_en_Plantengieters",
-})
-
-
-+promo-A-IL-TextR_MobileBottom({
-title: "Vind het ideale cadeau voor Vaderdag",
-subtitle: "Kleine prijzen, grote kortingen",
-cta: "Dit zijn onze cadeautips",
-link: "https://www.collishop.be/e/nl/cs/vaderdag-cadeauwijzer",
-img: "actie_vaderdag",
-bgcolor: "#E1E4E5", 
-color: "#FFFFFF"
-})
-
-
-+promo-4prod({
-blockTitle: "De leukste cadeaus voor je papa",
-
-title: "De'Longhi <br> Airconditioner",
-link: "https://www.collishop.be/e/nl/cs/delonghi-airconditioner-silent-pac-n90--917304--11-1",
-img: "actie_Airconditioner",
-price: "€ 529 ",
-oldprice: "€ 599",
-percentage: "12%",
-sterren: 0,
-
-title2: "Zwilling Pottenset 5-delig",
-link2: "https://www.collishop.be/e/nl/cs/zwilling-5-delige-kookpottenset-base-299007",
-img2: "actie_kookpottenset",
-price2: "€ 179 ",
-oldprice2: "€ 309 ",
-percentage2: "42%",
-sterren2: 4.5,
-
-title3: "De'Longhi Espressomachine",
-link3: "https://www.collishop.be/e/nl/cs/delonghi-volautomatische-espressomachine-dinamica-ecam35055sb-grijs-354876",
-img3: "actie_espressomachine",
-price3: "€ 699 ", 
-oldprice3: "€849 ",
-percentage3: "18%",
-sterren3: 0,
-
-title4: "Weber <br>Accessoireset",
-link4: "https://www.collishop.be/e/nl/cs/weber-accessoireset-909586",
-img4: "actie_Accessoireset",
-price4: "€ 49,00 ",
-oldprice4: "€ 59,95 ",
-percentage4: "18%",
-sterren4: 5
-})
-
-+promo-2cat({
-voorvoegsel: "",
-procent: "",
-title: "Potten en pannen",
-cta: "Bekijk ze allemaal",
-link: "https://www.collishop.be/e/nl/cs/potten-en-pannen",
-img: "actie_Potten_en_pannen",
-
-voorvoegsel2: "",
-procent2: "",
-title2: "Barbecue",
-cta2: "Vind een passend model",
-link2: "https://www.collishop.be/e/nl/cs/barbecue",
-img2: "actie_Barbecue",
-})
-
-+promo-A-IL-TextR_MobileBottom({
-title: "Houtskool-, gasbarbecues en accessoires van Barbecook",
-subtitle: "Topkwaliteit voor een gezellige barbecue! ",
-cta: "Alles van Barbecook",
-link: "https://www.collishop.be/e/nl/cs/merken/merk-barbecook?#facet:&productBeginIndex:0&facetLimit:&orderBy:5&pageView:grid&minPrice:&maxPrice:&pageSize:&",
-img: "actie_Barbecook",
-bgcolor: "#83BE27", 
-color: "#FFFFFF"
-})
-
 +Title({
-title: "Hoog tijd om van dekbedovertrek te wisselen!",
+title: "Krijg 10% korting bij aankoop van een pakket vuilniszakken van Brabantia en - 15% vanaf 2 pakketten!",
+})
+
+
+
+
++promo-A-IL-TextR_MobileBottom({
+title: "Brabantia vuilnisbakken:",
+subtitle: "Voor elk interieur een passende vuilnisbak!",
+cta: "Naar de verschillende maten",
+link: "https://www.collishop.be/e/nl/cs/vuilnisbakken/merk-brabantia#tabButtonContainerSearch",
+img: "Brabantia_Vuilnisbakken",
+bgcolor: "#E1E4E5",
+color: "#FFFFFF"
 })
 
 
 +promo-D-IR_TextL_MobileTop({
-title: "Dekbedovertrekken in Outlet",
-subTitle: "Grijp je laatste kans en profiteer van <span style='color:#ce0000'> straffe promo's in onze Outlet</span>",
-cta: "Ga naar de Outlet",
-link: "https://www.collishop.be/e/nl/cs/outlet-dekbedovertrekken",
-img: "actie_Dekbedovertrekken",
-bgcolor: "#FED9DF",
+title: "Brabantia bewaardozen",
+subTitle: "Bewaar je voedingsmiddelen in stijl!",
+cta: "Ontdek alle modellen",
+link: "https://www.collishop.be/e/nl/cs/voorraadbussen/merk-brabantia",
+img: "Brabantia_Voorraaddozen",
+bgcolor: "#FE7E22", 
 color: "#FFFFFF"
 })
 
-+inspo-E-IL_TextR_Border_MobileBottom({
-title: "5 Trendy stijlen voor je dekbedovertrek",
-subTitle: "Stop je bed in een hip jasje met een leuk motief, een zachte kleur of een fijn stofje.",
-cta: "Laat je inspireren",
-link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
-img: "actie_5_mooiste_trends",
-bgcolor: "#83C8DF",
-color: "#FFFFFF"
 
-    })
+
++promo-A-IL-TextR_MobileBottom({
+title: "Brabantia strijkplanken",
+subtitle: "Strijk comfortabel en efficiënt",
+cta: "Kies je favoriet motief",
+link: "https://www.collishop.be/e/nl/cs/strijkplanken/merk-brabantia",
+img: "Brabantia_Strijkplanken",
+bgcolor: "#E1E4E5",
+color: "#FFFFFF"
+})
+
++promo-D-IR_TextL_MobileTop({
+title: "Brabantia droogmolens",
+subTitle: "Droog je was buiten: goed voor het milieu én je portemonnee.",
+cta: "Bekijk alle droogmolens",
+link: "https://www.collishop.be/e/nl/cs/droogmolens/merk-brabantia",
+img: "Brabantia_Droogmolens",
+bgcolor: "#FED9DF", 
+color: "#FFFFFF"
+})
+
+<!-- BESTELLEN BLOK -->
+table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
+    tr
+        td(align="center" valign="top" class="td-padding-outer" style="padding:0 0 0 0")
+            table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#FFFFFF")
+                tr
+                    td(align="left" valign="top" style="padding:25px 25px 40px 25px; border-top: 2px solid #EAEDEE; border-bottom: 2px solid #EAEDEE;" class="td-padding-inner")
+                        table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
+                            tr
+                                td(align="center" valign="top" class="pt-25" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #000000; font-size: 24px; line-height: 28px; text-decoration: none; padding-bottom: 15px;") Hoe je korting verzilveren?
+                            tr
+                                td(align="center" valign="top")
+                                    table(align="left" width="32%" border="0" cellspacing="0" cellpadding="0")
+                                        tr
+                                            td(align="center" valign="top")
+                                                table(width="160" border="0" cellspacing="0" cellpadding="0" class="img-full")
+                                                    tr
+                                                        td(align="center" valign="top" style="padding-bottom:10px;")
+                                                            a(href="https://www.collishop.be/e/nl/cs" name="korting_verzilveren_collishop" target="_blank" xt="SPCLICKSTREAM")
+                                                                img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/icon-5.jpg" width="62" height="52" alt="#ALT" border="0" style="display:block; width: 62px;")
+                                                    tr
+                                                        td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:18px; font-weight:bold; color:#000000; padding:0px 0 20px 0;")
+                                                            a(href="https://www.collishop.be/e/nl/cs" name="korting_verzilveren_collishop" target="_blank" xt="SPCLICKSTREAM" style="color:#000000; text-decoration:none;") 1.	-10% vanaf 1 pakket vuilniszakken en -15% vanaf 2 pakketten
+                                    table(align="left" width="32%" border="0" cellspacing="0" cellpadding="0")
+                                        tr
+                                            td(align="center" valign="top")
+                                                <!-- PRODUCT -->
+                                                table(width="160" border="0" cellspacing="0" cellpadding="0" class="table-full")
+                                                    tr
+                                                        td(align="center" valign="top" style="padding-bottom:10px;")
+                                                            a(href="https://www.collishop.be/e/nl/cs" name="korting_verzilveren_collishop" target="_blank" xt="SPCLICKSTREAM")
+                                                                img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/icon-6.jpg" width="62" height="52" alt="#ALT" border="0" style="display:block; width: 62px;")
+                                                    tr
+                                                        td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:18px; font-weight:bold; color:#000000; padding:0px 0 20px 0;")
+                                                            a(href="https://www.collishop.be/e/nl/cs" name="korting_verzilveren_collishop" target="_blank" xt="SPCLICKSTREAM" style="color:#000000; text-decoration:none;") 2.	De korting wordt automatisch verrekend in je winkelmandje 
+                                                <!-- PRODUCT -->
+                                    table(align="left" width="32%" border="0" cellspacing="0" cellpadding="0")
+                                        tr
+                                            td(align="center" valign="top")
+                                                <!-- PRODUCT -->
+                                                table(width="160" border="0" cellspacing="0" cellpadding="0" class="img-full")
+                                                    tr
+                                                        td(align="center" valign="top" style="padding-bottom:10px;")
+                                                            a(href="https://www.collishop.be/e/nl/cs" name="korting_verzilveren_collishop" target="_blank" xt="SPCLICKSTREAM")
+                                                                img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/icon-7.jpg" width="62" height="52" alt="#ALT" border="0" style="display:block; width: 62px;")
+                                                    tr
+                                                        td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:13px; line-height:18px; font-weight:bold; color:#000000; padding:0px 0 20px 0;")
+                                                            a(href="https://www.collishop.be/e/nl/cs" name="korting_verzilveren_collishop" target="_blank" xt="SPCLICKSTREAM" style="color:#000000; text-decoration:none;") 3.	Plaats je bestelling
+                                                <!-- PRODUCT -->
+                            tr
+                                td(align="center" valign="top" style="padding:0 25px 0 25px;")
+                                    table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
+                                        tr
+                                            td(align="center" valign="middle")
+                                                table(border="0" cellspacing="0" cellpadding="0" style="display: inline;")
+                                                    tr
+                                                        td(align="center" valign="middle" width="16" style="padding-right:10px;")
+                                                            img(src="http://content.landingpage.be/Collishop/2020/COLLI-11/img/arrow-icon-blue.png" width="16" height="16" alt="" border="0" style="display:block;")
+                                                        td(align="center" valign="middle" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:14px; line-height:22px; color:#0098DA; display: inline")
+                                                            a(href="https://www.collishop.be/e/nl/cs" name="korting_verzilveren_collishop" target="_blank" xt="SPCLICKSTREAM" style="color:#0098DA; text-decoration:none;") Ik profiteer van deze deal
+<!-- BESTELLEN BLOK -->

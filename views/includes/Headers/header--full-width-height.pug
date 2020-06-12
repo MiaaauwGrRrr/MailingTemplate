@@ -10,7 +10,7 @@ mixin header--full-width-height(data)
                                 tr
                                     td(align="center" valign="top")
                                         a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM"  style="font-size: 0; line-height: 0; padding: 0;")
-                                            img(src=`img/${data.img}.jpg` width="600" height="328" alt=`${data.img}`  border="0" class="img-full" style="display: block;")
+                                            img(src=`img/${data.img}.jpg` width="600" height="auto" alt=`${data.img}`  border="0" class="img-full" style="display: block;")
     table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
         tr
             td(align="center" valign="top" class="td-padding-outer pb-30" style="padding:30px 0 60px 0;")
@@ -23,9 +23,9 @@ mixin header--full-width-height(data)
                                         table(width="100%" border="0" cellspacing="0" cellpadding="0")
                                             tr
                                                 td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:25px; line-height:35px;  padding-bottom: 10px;" class="fs-20")=data.title
-                                                   //- p(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:30px; line-height:35px;  padding-bottom: 10px;" class="fs-20") Tot  <span style="display: inline-block; font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:70px; line-height:82px; font-weight: bold; color: #D20000;" class="fs-50">- xx %</span> op onze selectie cadeau-ideeën
+                                                    p(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:30px; line-height:35px;  padding-bottom: 10px;" class="fs-20")!=data.subTitle
                                         table(border="0" cellspacing="0" cellpadding="0")
                                             tr
-                                                td(align="center" valign="top" bgcolor="#0098DA" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px; border-radius: 25px;")
+                                                td(align="center" valign="top" bgcolor="#CE0000" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px; border-radius: 25px;")
                                                     a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")=data.cta
     <!-- HEADER FULL WIDTH HEIGHT -->
