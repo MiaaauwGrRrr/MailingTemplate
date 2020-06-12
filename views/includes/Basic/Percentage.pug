@@ -10,16 +10,16 @@ mixin Percentage(data)
                                     td(align="center" valign="top")
                                         table(width="100%" border="0" cellspacing="0" cellpadding="0")
                                             tr
-                                                td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:25px; line-height:35px;  padding-bottom: 10px;" class="fs-20")
-                                                   p(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:30px; line-height:35px;  padding-bottom: 10px;" class="fs-20")!=data.tot  
-                                                    strong(style="display: inline-block; font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:70px; line-height:82px; font-weight: bold; color: #E83C5F;" class="fs-50")!=data.percentage
+                                                td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:25px; line-height:35px;  padding-bottom: 10px;" class="fs-20")
+                                                   p(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:30px; line-height:35px;  padding-bottom: 10px;" class="fs-20")!=data.tot  
+                                                    strong(style="display: inline-block; font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:70px; line-height:82px; font-weight: 700; color: #E83C5F;" class="fs-50")!=data.percentage
                                                     span!=data.categorie
                                         table(border="0" cellspacing="0" cellpadding="0")
                                             tr
-                                                td(align="center" valign="top" bgcolor=`${data.CTAbgcolor}` style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px;")
+                                                td(align="center" valign="top" bgcolor=`${data.CTAbgcolor}` style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size:18px; line-height:21px; color:#FFFFFF; padding:15px 20px 15px 20px;")
                                                      table(border="0" cellspacing="0" cellpadding="0")
                                                         tr
-                                                            td(align="center" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight:700; font-size:18px; line-height:21px; color:#FFFFFF;")
+                                                            td(align="center" valign="top" style="font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight:700; font-size:18px; line-height:21px; color:#FFFFFF;")
                                                                 a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")!=data.cta
                                                             td(align="center" valign="middle" width="16" style="padding-left:10px;")
                                                                 a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; display:inline-block;")
