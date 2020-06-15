@@ -1,46 +1,3 @@
-//- 83BE27  GROEN
-//- FE7E22  ORANJE
-//- FED9DF  ROZE
-//- 83C8DF  BLAUW
-//- E1E4E5  GRIJS
-
-include ../includes/Headers/header--full-width-height.pug
-include ../includes/Basic/Title.pug
-include ../includes/Basic/Intro.pug
-include ../includes/Basic/Button.pug
-include ../includes/Basic/Percentage.pug
-
-
-include ../includes/Promo/promo-A-IL-TextR_MobileBottom.pug
-include ../includes/Promo/promo-C-IR_TextL_MobileBottom.pug
-include ../includes/Promo/promo-B-IL_TextR_MobileTop.pug
-include ../includes/Promo/promo-D-IR_TextL_MobileTop.pug
-include ../includes/Promo/promo-E-IL_TitleR_MobileBottom.pug
-include ../includes/Promo/promo-F-IL_TitleR_MobileTop.pug
-include ../includes/Promo/promo-G-IR_TitleL_MobileBottom.pug
-include ../includes/Promo/promo-H-IR_TitleL_MobileTop.pug
-include ../includes/Promo/promo-Prod_Red-IL.pug
-include ../includes/Promo/promo-Prod_Red-IR.pug
-include ../includes/Promo/promo-Prod_White-IL.pug
-
-include ../includes/Basic/promo-2cat.pug
-include ../includes/Basic/promo-4prod.pug
-include ../includes/Basic/promo-2prod.pug
-
-include ../includes/Inspo/inspo-A-IL_TitleR_MobileBottom.pug
-include ../includes/Inspo/inspo-B-IL_TitleR_MobileTop.pug
-include ../includes/Inspo/inspo-C-IR_TitleL_MobileBottom.pug
-include ../includes/Inspo/inspo-D-IR_TitleL_MobileTop.pug
-include ../includes/Inspo/inspo-E-IL_TextR_Border_MobileBottom.pug
-include ../includes/Inspo/inspo-F-IL_TextR_Border_MobileTop.pug
-include ../includes/Inspo/inspo-G-IR_TextL_Border_MobileBottom.pug
-include ../includes/Inspo/inspo-H-IR_TextL_Border_MobileTop.pug
-include ../includes/Inspo/inspo-I-IL_TextR_MobileBottom.pug
-include ../includes/Inspo/inspo-J-IL_TextR_MobileTop.pug
-include ../includes/Inspo/inspo-K-IR_TextL_MobileBottom.pug
-include ../includes/Inspo/inspo-L-IR_TextL_MobileTop.pug
-include ../includes/Inspo/inspo-M-IL-TextR_MobileBottom
-include ../includes/Inspo/inspo-N-IR_TextL_MobileBottom
 
 +Title({
 title: "header--full-width-height",
@@ -74,14 +31,22 @@ CTAbgcolor: "#E83C5F"
 title: "Intro",
 })
 
-+Intro({
-    aanspreking: "Beste klant",
-    tekst: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae officia illo culpa laudantium atque nam, illum consequatur veniam, ducimus optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor",
-        "Optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor",
-    ],
-    afsluiting: "Groeten, <br>Het ColliShop-team"
-})
+table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
+    tr
+        td(align="center" valign="top" class="td-padding-outer")
+            table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#FFFFFF")
+                tr
+                    td(align="left" valign="top" class="td-padding-inner" style="padding:25px 0 25px 0;")
+                        table(width="100%" border="0" cellspacing="0" cellpadding="0")
+                            tr
+                                td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:20px; line-height:30px; color:#333333; font-weight:bold; padding-bottom:10px;") Beste klant,
+                            tr
+                                td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333; margin-bottom: 10px;") Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae officia illo culpa laudantium atque nam, illum consequatur veniam, ducimus optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor
+                            tr
+                                td(align="left"  valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333; padding-top:7px;") optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor
+                            tr
+                                 td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333;")  
+                                    p Groeten, <br>Het ColliShop-team
 
 <!-- INTRO -->
 
@@ -260,23 +225,6 @@ link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
 img: "temp/header-image7",
 })
 
-+inspo-M-IL-TextR_MobileBottom({
-title: "Hoe kies je de juiste koffiemachine",
-subtitle: "Lorem ipsum dolor sit amet, consectetur",
-cta: "Bekijk de selectie",
-link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
-img: "temp/header-image7",
-bgcolor: "#E1E4E5", 
-})
-
-+inspo-N-IR-TextL_MobileBottom({
-title: "Hoe kies je de juiste koffiemachine",
-subtitle: "Lorem ipsum dolor sit amet, consectetur",
-cta: "Bekijk de selectie",
-link: "https://www.collishop.be/e/nl/cs/5-trends-dekbedovertrekken",
-img: "temp/header-image7",
-bgcolor: "#E1E4E5", 
-})
 
 
 
