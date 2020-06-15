@@ -6,6 +6,7 @@
 
 include ../includes/Headers/header--full-width-height.pug
 include ../includes/Basic/Title.pug
+include ../includes/Basic/Intro.pug
 include ../includes/Basic/Button.pug
 include ../includes/Basic/Percentage.pug
 
@@ -71,22 +72,14 @@ CTAbgcolor: "#E83C5F"
 title: "Intro",
 })
 
-table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
-    tr
-        td(align="center" valign="top" class="td-padding-outer")
-            table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor="#FFFFFF")
-                tr
-                    td(align="left" valign="top" class="td-padding-inner" style="padding:25px 0 25px 0;")
-                        table(width="100%" border="0" cellspacing="0" cellpadding="0")
-                            tr
-                                td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:20px; line-height:30px; color:#333333; font-weight:bold; padding-bottom:10px;") Beste klant,
-                            tr
-                                td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333; margin-bottom: 10px;") Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae officia illo culpa laudantium atque nam, illum consequatur veniam, ducimus optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor
-                            tr
-                                td(align="left"  valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333; padding-top:7px;") optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor
-                            tr
-                                 td(align="left" valign="top" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;; font-size:16px; line-height:24px; color:#333333;")  
-                                    p Groeten, <br>Het ColliShop-team
++Intro({
+    aanspreking: "Beste klant",
+    tekst: [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae officia illo culpa laudantium atque nam, illum consequatur veniam, ducimus optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor",
+        "Optio harum doloribus reiciendis libero, ipsam quaerat quod quasi voluptas! Lorem ipsum dolor dolor dolor",
+    ],
+    afsluiting: "Groeten, <br>Het ColliShop-team"
+})
 
 <!-- INTRO -->
 
