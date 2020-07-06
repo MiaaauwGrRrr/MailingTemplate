@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!-- PROMO BLOK -->
 table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
     tr
@@ -26,3 +27,37 @@ table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapp
                                                 a(href="#LINK" style="color:#FFFFFF; text-decoration:none;") Bekijk ze hier
                         
 <!-- PROMO BLOK -->
+=======
+mixin promo-H-IR_TitleL_MobileTop(data) 
+    <!-- PROMO BLOK -->
+    table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-wrapper" bgcolor="#FFFFFF")
+        tr
+            td(align="center" valign="top" class="td-padding-outer" style="padding:0 0 50px 0;")
+                table(width="600" border="0" cellspacing="0" cellpadding="0" class="table-full" bgcolor=`${data.bgcolor}`)
+                    tr
+                        td(align="left" valign="top")
+                            table(width="47%" height="300" align="right" border="0" cellspacing="0" cellpadding="0" class="table-full h-100")
+                                tr
+                                    td(align="left" valign="top" width="100%")
+                                        a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM")
+                                            img(src=`img/${data.img}.jpg` width="298" height="300" alt=`${data.img}` border="0" class="img-full" style="display:block;")
+                            table(width="49%" height="300" align="left" border="0" cellspacing="0" cellpadding="0" class="table-full h-100" bgcolor=`${data.bgcolor}`)
+                                tr
+                                    td(align="center" valign="middle" style="padding:20px 25px 0 25px;")
+                                        table(width="100%" border="0" cellspacing="0" cellpadding="0" class="table-full")
+                                            tr
+                                                td(align="center" valign="top" class="pt-25" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; color: #FFFFFF; font-size: 30px; font-weight:700; line-height: 30px; text-decoration: none; padding-bottom: 25px;")!=data.title
+                                tr
+                                    td(align="center" valign="middle" style="padding-bottom: 25px;")
+                                        table(border="0" cellspacing="0" cellpadding="0")
+                                            tr
+                                                td(align="center" valign="middle" bgcolor="#E83C5F" style="padding:15px 20px 15px 20px;")
+                                                    table(border="0" cellspacing="0" cellpadding="0")
+                                                        tr
+                                                            td(align="center" valign="middle" style="font-family: Titillium Web,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-weight:700; font-size:18px; line-height:21px; color:#FFFFFF;")
+                                                                a(href=`${data.link}` name=`img_${data.img}` target="_blank" xt="SPCLICKSTREAM" style="color:#FFFFFF; text-decoration:none; font-weight: 700px;")!=data.cta
+                                                            td(align="left" valign="middle" width="16" style="padding-left:10px;")
+                                                                img(src="img/vast/arrow-icon-transparent.png" alt="pijl" width="16" height="16"  border="0" style="display:block;" )
+                            
+    <!-- PROMO BLOK -->
+>>>>>>> Stashed changes
