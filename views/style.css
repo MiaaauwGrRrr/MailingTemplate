@@ -232,3 +232,13 @@ table td {
         line-height: 23px !important;
     }
 }
+
+
+.kortingVerzilveren{
+     width: 32%;
+}
+@media screen and (max-width: 600px) {
+    .kortingVerzilveren{
+        width: 100% !important;
+   }
+}
